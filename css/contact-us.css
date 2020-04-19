@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(180deg, #F7F7F7 0%, #ECECEC 100%);
+}
+
+/* banner */
+.banner {
+    background: url(../Img/contact-banner.jpg), #D3CFC6;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+
+}
+
+@media screen and (min-width:867px) {
+    .banner {
+        background-attachment: fixed;
+    }
+}
+
+.banner .title {
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.9) 0%, rgba(245, 166, 34, 0.3) 100%);
+}
+
+/* contact-form */
+.contact-form {
+    margin-top: -100px;
+
+    //background-image: linear-gradient(180deg, #F7F7F7 0%, #ECECEC 100%);
+    min-height: 200px;
+    padding-bottom: 150px;
+}
+
+.contact-form > .container {
+    min-height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 72px 0 rgba(0, 0, 0, 0.04), 0 -19px 800px 135px rgba(116, 95, 54, 0.06);
+    border-radius: 4px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: rgba(40, 40, 34, 0.53);
+    text-align: center;
+}
+
+.contact-form form {
+    margin: auto;
+    max-width: 600px;
+}
+
+.contact-form .form-control:focus {
+    border: #F6B64E solid 2px;
+    box-shadow: none;
+}
+
+.contact-form img {
+    padding: 10px
+}
+
+.contact-form button {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 36px;
+    background-color: #AC9D88;
+    box-shadow: none;
+    border-color: aliceblue;
+}
+
+.contact-form .btn p {
+    padding-top: 3px;
+    color: white;
+    text-align: center;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #403327;
+    border-color: none;
+}
+
+/* map */
+.map {
+    background-color: #fff;
+}
+
+.map .info {
+    border-left: 2px solid rgba(112, 90, 69, 0.2);
+    height: 100%;
+}
+
+.map .info td,
+.map .info th {}
+
+.map .info th {
+    min-width: 100px;
+}
+
+.map .info i {
+    padding-right: 20px;
+}
+
+.map img {
+    width: 100%;
+    min-width: 1000px;
+}

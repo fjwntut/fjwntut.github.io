@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <title>肯驛商務官網-關於我們</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <!--GSAP-->
+    <script src="../greensock-js/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="../greensock-js/src/minified/TweenMax.min.js">
+    </script>
+
+    <!--ScrollMagic-->
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+
+    <!--Custom Style Sheet-->
+    <link rel="stylesheet" href='../css/global.css'>
+    <link rel="stylesheet" href="../css/about-us.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html"><img src="../Img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/about-us.html">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/core-value.html">核心價值</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/product.html">產品與服務</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/partner.html">合作企業與夥伴</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contact-us.html">聯絡我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/hiring.html">人才招募</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/hiring.html">EN</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <script>
+            $(window).scroll(function() {
+                var height = $(window).scrollTop();
+                if (height > 0) {
+                    $(".bg-dark").addClass("opaque");
+                } else {
+                    $(".bg-dark").removeClass("opaque");
+                }
+            });
+
+        </script>
+    </div>
+    <!--header-->
+
+    <div class="container-fluid banner">
+        <div class="title row d-flex">
+            <div class="align-center">
+                <h1>關於我們</h1>
+                <div class="row">
+                    <hr>
+                    <h3>About Us</h3>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var controller = new ScrollMagic.Controller();
+        var h = $(".banner").height();
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".banner",
+            triggerHook: 0.8,
+        }).setTween(TweenMax.from(".banner .title .align-center", 1, {
+            opacity: 0
+        })).addTo(controller);
+
+    </script>
+    <!--/.banner-->
+
+    <div class="section section_01 ">
+        <div class="container">
+            <div class="align-self-center scrollable-parent">
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <h2>關於肯驛商務</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <p>肯驛商務自2004年起跨足客服委外營運領域，以良好的流程規劃控管能力和穩固的系統技術支援，提供四大服務項目，滿足不同產業客戶在客服中心委外上的需求，為發卡組織、金融業與指標企業客服委外營運首選。是目前業界唯一同時具備服務品質與資訊安全雙證照、營運經驗及流程管理能力，能提供客戶全方位服務的企業。
+                        </p>
+                        <p>肯驛商務為全臺灣大型電話客服中心之一，自2004年開始，服務肯驛國際集團承接之高端VIP客群，集團在地深耕18年，擁有大型客服的維運經驗，期間引入資訊安全及服務品質的國際認證機制，提供維繫及管理VIP的顧客關係，是智能客服營運的專家。
+                        </p>
+                    </div>
+                </div>
+                <div class="my-5 scrollable">
+                    <img src="../Img/about-section01-graph.png">
+                </div>
+                <div class="my-5">
+                    <p>肯驛商務14年來專職經營高端VIP客層及尊榮禮賓秘書服務，量身訂做忠誠度計畫，提供客戶關係維繫等項目。每年服務超過百萬VIP客戶，滿足客戶需求案件已達千萬件，秉持「誠懇用心
+                        專注為您」的精神，打造高品質的服務饗宴以及企業主客服中心委外的首選。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/.section_01-->
+
+    <div class="section section_02">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-5 bg full-row align-items-center">
+                    <img src="../Img/logo.png">
+                </div>
+                <div class="col-md-7 text full-row align-items-center">
+                    <div class="content my-5 py-05">
+                        <h2>關於肯驛國際</h2>
+                        <p>肯驛商務自2004年起跨足客服委外營運領域，以良好的流程規劃控管能力和穩固的系統技術支援，提供四大服務項目，滿足不同產業客戶在客服中心委外上的需求，為發卡組織、金融業與指標企業客服委外營運首選。是目前業界唯一同時具備服務品質與資訊安全雙證照、營運經驗及流程管理能力，能提供客戶全方位服務的企業。
+                        </p>
+                        <p>肯驛商務為全臺灣大型電話客服中心之一，自2004年開始，服務肯驛國際集團承接之高端VIP客群，集團在地深耕18年，擁有大型客服的維運經驗，期間引入資訊安全及服務品質的國際認證機制，提供維繫及管理VIP的顧客關係。
+                        </p>
+                        <p>肯驛商務14年來專職經營高端VIP客層及尊榮禮賓秘書服務，量身訂做忠誠度計畫，提供客戶關係維繫等專案。滿足客戶需求案件已達千萬件，秉持「誠懇用心・專注為您」的精神。</p>
+                        <br>
+                        <a href="https://www.canlead.com.tw/" class="p-2">肯驛國際網站 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_03-->
+    <div class="section section_03">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 text justify-content-center">
+                    <div class="content my-5 py-05">
+                        <h2>關於江蘇百靈</h2>
+                        <p>江蘇百靈，由全球最大的高端出行服務平臺的龍騰出行集團及臺灣最大的貴賓服務平臺的臺灣肯驛集團於2018年9月共同創立，集合兩大集團深厚資源，引進國際化新的生活方式，將高端服務模式引入中國市場，提供高端客戶前所未有的體驗，成為中國市場頂端服務的標竿。
+                        </p>
+                        <p>江蘇百靈於2018年9月入駐江蘇如皋軟件園，主要經營高端客戶的服務外包、全球私人管家服務、全球醫療緊急救援，私人飛機服務，服務範疇從商務出行的國內外接待、禮賓車、休息室、貴賓通道到生活娛樂五星度假酒店度假村、購物，再到私人定制的秘書服務等，我們有24小時全年無休的多國語言專業秘書團隊，配備專業先進的全媒體系統，提供客戶一站式的貼心服務。
+                        </p>
+                        <p>二大集團的結合帶來不同領域的專業能量挹注，在江蘇百靈的支援下，肯驛商務擁有二岸三地的服務團隊,針對高端客戶的服務將更精緻也更多元化,每年的服務規模也達到3000萬以上,在肯驛商務成熟的客服運營經驗下,龙腾集團的客戶滿意度及問題處理時效也有顯著的提升。
+                        </p>
+                        <br>
+                        <!--<a href="" class="p-2">江蘇百靈官網 →</a>-->
+                    </div>
+                </div>
+                <div class="col-md-5 bg">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/.section_04-->
+    <div class="section section_04">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-7 bg">
+                    <img src="../Img/about-section04.png">
+                </div>
+                <div class="col-md-5 text">
+
+                    <div class="content my-5">
+                        <h2>集團資源</h2>
+                        <p>肯驛商務為全台灣大型電話客服中心之一，自2004年開始，服務肯驛國際集團承接之高端VIP客群，集團在地深耕18年，擁有大型客服的維運經驗，期間引入資訊安全及服務品質的國際認證機制，提供維繫及管理VIP的顧客關係。
+                        </p>
+                        <p>肯驛商務14年來專職經營高端VIP客層及尊榮禮賓秘書服務，量身訂做忠誠度計畫，提供客戶關係維繫等項目。滿足客戶需求案件已達千萬件，秉持「誠懇用心
+                            專注為您」的精神。打造高質量的服務，成為您生命中的氧氣，讓肯驛商務融入您的生活。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_03-->
+
+    <footer id="footerbox">
+        <ul class="copyright">
+            <li class="logo"><img src="https://www.freeliving.com.tw/must/images/logo/canlead_w2.png"></li>
+            <li class="txt">
+                服務提供商：肯驛國際(股)公司 ｜ 品牌系列：U.First全球禮賓服務<br>
+                服務品牌：禮贈品 ｜ 客服專線 04-2206-0000
+            </li>
+            <li class="certification">
+                <span><img src="https://www.freeliving.com.tw/must/images/certification/27001.png">ISO27001認證</span>
+                <span><img src="https://www.freeliving.com.tw/must/images/certification/9001.png">ISO9001認證</span>
+            </li>
+        </ul>
+    </footer>
+    <link href="https://www.freeliving.com.tw/_include/footer_brands.css" rel="stylesheet" type="text/css">
+    <footer id="footerbox">
+        <ul class="logo_list">
+            <li class="brands_title">
+                <h3 class="brands">肯驛國際所屬品牌</h3>
+                <h3 class="company">肯驛國際集團關係企業</h3>
+            </li>
+            <li class="brands brands_logo_bg">
+                <!--
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+-->
+            </li>
+            <li class="company">
+
+                <a href="#" target="_blank"><img src="https://www.freeliving.com.tw/must/images/logo/lifestyle_gray.png" class="lifestyle_gray"></a>
+                <a href="https://www.heycar.com.tw/" target="_blank"><img src="https://www.freeliving.com.tw/must/images/logo/heycar_gray.png" class="heycar_gray"></a>
+
+            </li>
+        </ul>
+    </footer>
+    <!---/.footer--->
+</body>
+<script>
+    var controller = new ScrollMagic.Controller();
+
+    /* fade in animation for sections */
+
+    for (i = 1; i <= 4; i++) {
+        var className = ".section_0" + i;
+        var scene = new ScrollMagic.Scene({
+            triggerElement: className,
+            triggerHook: 0.5,
+        }).setTween(TweenMax.staggerFromTo(className + " p", 0.5, {
+            x: -100,
+            opacity: 0
+        }, {
+            x: 0,
+            opacity: 1
+        }, 0.1)).addTo(controller);
+    }
+
+</script>
+
+</HTML>

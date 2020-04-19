@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <meta charset="UTF-8">
+    <title>肯驛商務官網-核心價值</title>
+    <srcipt></srcipt>
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="../greensock-js/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="../greensock-js/src/minified/TweenMax.min.js">
+    </script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+    <link rel="stylesheet" href='../css/global.css'>
+    <link rel="stylesheet" href="../css/core-value.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html"><img src="../Img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about-us.html">關於我們</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/core-value.html">核心價值</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/product.html">產品與服務</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/partner.html">合作企業與夥伴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contact-us.html">聯絡我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/hiring.html">人才招募</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/hiring.html">EN</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <script>
+            $(window).scroll(function() {
+                var height = $(window).scrollTop();
+                if (height > 0) {
+                    $(".bg-dark").addClass("opaque");
+                } else {
+                    $(".bg-dark").removeClass("opaque");
+                }
+            });
+
+        </script>
+    </div>
+    <div class="container-fluid banner">
+        <div class="title row d-flex">
+            <div class="align-center">
+                <h1>核心價值</h1>
+                <div class="row">
+                    <hr>
+                    <h3>Core Values</h3>
+                    <hr>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        /* Adding FADE IN animation to .banner */
+        var controller = new ScrollMagic.Controller();
+        var h = $(".banner").height();
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".banner",
+            triggerHook: 0.8,
+        }).setTween(TweenMax.from(".banner .title .align-center", 1, {
+            opacity: 0
+        })).addTo(controller);
+
+    </script>
+    <!--/.banner-->
+    <div class="menu  container">
+        <div class="align-self-center">
+            <div class="d-flex flex-wrap my-5 justify-content-around">
+                <a class="value" scrollTo="#value-01">
+                    <div>
+                        <img src="../Img/core-value-01.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>VIP專業客服經驗</h4>
+                    </div>
+                </a>
+                <a class="value" scrollTo="#value-02">
+                    <div>
+                        <img src="../Img/core-value-02.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>智能化客服系統</h4>
+                    </div>
+                </a>
+                <a class="value" scrollTo="#value-03">
+                    <div>
+                        <img src="../Img/core-value-03.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>資訊系統整合力</h4>
+                    </div>
+                </a>
+                <a class="value" scrollTo="#value-04">
+                    <div>
+                        <img src="../Img/core-value-04.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>客製化分析報表</h4>
+                    </div>
+                </a>
+                <a class="value" scrollTo="#value-05">
+                    <div>
+                        <img src="../Img/core-value-05.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>ISO國際認證</h4>
+                    </div>
+                </a>
+                <a class="value" scrollTo="#value-06">
+                    <div>
+                        <img src="../Img/core-value-06.png">
+                    </div>
+                    <div class="my-4">
+                        <h4>客戶滿意度提升</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Adding Animation to Core Value */
+        var controller = new ScrollMagic.Controller();
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".menu",
+            triggerHook: 0.8,
+        }).setTween(TweenMax.staggerFromTo(".menu .value", 0.3, {
+            scale: 0.1,
+            opacity: 0,
+            ease: Back.easeOut.config(1.7)
+        }, {
+            scale: 1,
+            opacity: 1,
+            ease: Back.easeOut.config(1.7)
+        }, 0.1)).addTo(controller);
+
+        $("a.value").click(
+            function() {
+                var target = $(this).attr("scrollTo");
+                var posY = $(target).offset().top - 50;
+                TweenMax.to(
+                    window,
+                    0.5, {
+                        scrollTo: {
+                            y: posY
+                        }
+                    }
+                )
+            }
+        )
+
+    </script>
+    <!--/.menu-->
+
+    <div class="section section_01 mb-3" id="value-01">
+        <div class="title">
+            <img src="../Img/index-section02-circle01.png">
+            <h2>VIP專業客服經驗</h2>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="container align-self-center">
+                <div class="my-5">
+                    <p>肯驛商務自2004年起跨足客服委外營運領域，以良好的流程規劃控管能力和穩固的系統技術支援，提供四大服務項目，滿足不同產業客戶在客服中心委外上的需求，為發卡組織、金融業與指標企業客服委外營運首選。是目前業界唯一同時具備服務品質與資訊安全雙證照、營運經驗及流程管理能力，能提供客戶全方位服務的企業。
+                    </p>
+
+                </div>
+                <div class="my-5 row no-gutters">
+                    <div class="col-lg-3">
+                        <h3>服務經驗</h3>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row">
+
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-citi.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 14 年</h4>
+                                        <p>客戶訂單預約<br>
+                                            活動推廣<br>
+                                            三方通話</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-ctbc.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 8 年</h4>
+                                        <p>滿意度調查<br>
+                                            平台管理</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-cathaylife.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 3 年</h4>
+                                        <p>客戶訂單預約／諮詢<br>
+                                            客訴處理</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-audi.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 1 年</h4>
+                                        <p>客戶服務關懷</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-fubon.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 5 年</h4>
+                                        <p>外撥關懷</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 client">
+                                <div class="row">
+                                    <div class="col-6 client-logo">
+                                        <img src="../Img/value-section01-amex.png">
+                                    </div>
+                                    <div class="col-6 experience">
+                                        <h4>服務 6 年</h4>
+                                        <p>客戶訂單預約／諮詢<br>
+                                            平台管理</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_01-->
+
+    <div class="section section_02 mb-3" id="value-02">
+        <div class="title">
+            <img src="../Img/index-section02-circle02.png">
+            <h2>智能化客服系統</h2>
+        </div>
+        <div class="container-fluid d-flex">
+
+            <div class="align-self-center container">
+                <div class="my-5 row">
+                    <div class="col-md-6">
+                        <p>長久以來，客服行業都存在諸多痛點，客服人員流動性大、培訓成本高、客服效果難以把控、大量重複性問題過度消耗人工客服，同時，如何提升售前、售後轉化，如何優化客服流程，如何從客服數據中發現企業業務問題等，都是各類企業面臨的普遍問題。
+                        </p>
+                        <p>肯驛商務擁有14年豐厚的客戶服務豐富經驗，利用最完整的語音智慧客服系統及數位智慧客服系統，能提供一個使服務流程更專業及更具有效率的平臺。</p>
+                        <p>也就是說當客戶撥電話至客服中心時，透過我們的語音智慧客服系統，電話不經人工總機，按照特定規則自動轉接到正確的客服人員或進行其它自動處理。我們智能化的客服系統除了可以做自動話務分配、自動語音查詢、電話交易等電話業務，並透過高質量的品質監控，提供客服人員與客戶對話之檔案，方便日後相關人員的管理與訓練，同時減少∕客戶抱怨、糾紛並提升客服通話品質。最重要的是能與資料庫充份結合，使得所有與顧客關係管理相關的資料，皆能被完整地加以收集、累積、分析與應用。
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row tab">
+                            <button class="col-6 py-3 selected" onclick="changeGraph(1)">
+                                <h5>語音智慧客服系統</h5>
+                            </button>
+                            <button class="col-6 py-3" onclick=changeGraph(2)>
+                                <h5>數位智慧客服系統</h5>
+                            </button>
+
+                        </div>
+                        <div class="graph my-3">
+                            <img class="changable-image" src="../Img/value-section02-graph01.png">
+                        </div>
+                        <script>
+                            $("button").click(function() {
+                                $(".tab > button").removeClass("selected");
+                                $(this).addClass("selected");
+                            })
+
+                            function changeGraph(i) {
+                                $(".changable-image").attr("src", "../Img/value-section02-graph0" + i + ".png");
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_02-->
+
+    <div class="section section_03 mb-3" id="value-03">
+        <div class="title">
+            <img src="../Img/index-section02-circle03.png">
+            <h2>資訊系統整合力</h2>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="align-self-center container">
+                <div class="my-5 row">
+                    <div class="col-md-6">
+                        <div class="my-3 p-3 block">
+                            <h4>會員管理系統整合</h4>
+                            <p>● 會員資訊整合 ● 客戶行為追蹤 ● 客戶線上訂單服務</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="my-3 p-3 block">
+                            <h4>EC系統/官網整合</h4>
+                            <p>● 訂單系統資訊整合 ● 交易記錄匯總 ● 退換貨記錄查詢</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="my-3 p-3 block">
+                            <h4>服務整合顧問</h4>
+                            <p>● 整體營運規劃 ● 軟硬體支援 ● 教育訓練</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="my-3 p-3 block">
+                            <h4>流程規劃顧問</h4>
+                            <p>● 需求分析 ● 客製化流程建立 ● 解決方案提供</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_03-->
+
+    <div class="section section_04 mb-3" id="value-04">
+        <div class="title">
+            <img src="../Img/index-section02-circle04.png">
+            <h2>客製化分析報表</h2>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="align-self-center container">
+                <div class="my-5 row">
+                    <div class="my-3 col-md-6 icon">
+                        <img src="../Img/value-section04-icon.svg">
+                    </div>
+                    <div class="my-3 col-md-6 d-flex align-items-center">
+                        <p>針對企業的客戶服務需求，我們提供即時及完整的報表數據，詳盡的話務統計，依照服務效率與服務數量提供各式的電話報表，提供專屬分析報表，如:
+                            來電分析報表、顧客滿意度調查、預算管控報表、專案效益分析報表、客服人員效率分析報表等，以利於管理及分析人員績效，並有效提高話務控管及提升客戶滿意度。</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_04-->
+
+    <div class="section section_05 mb-3" id="value-05">
+        <div class="title">
+            <img src="../Img/index-section02-circle05.png">
+            <h2>ISO國際認證</h2>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="align-self-center container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../Img/value-section05-cert.jpg"></div>
+                    <div class="my-5 col-md-6 d-flex">
+                        <div class="align-self-center">
+                            <p>通過ISO9001、ISO27001是業界唯一獲得雙認證服務供應商</p>
+                            <p>通過TTQS人才發展品質管理系統認證</p>
+                            <p>外語認證通過英國、美國、香港、新加坡、印度、日本、韓國及龍騰出行等國際企業認可</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_05-->
+
+    <div class="section section_06 mb-3" id="value-06">
+        <div class="title">
+            <img src="../Img/index-section02-circle06.png">
+            <h2>客戶滿意度提升</h2>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="align-self-center container">
+                <div class="my-5">
+                    <p>可視客戶需求客製專屬服務流程，整合官網、EC網站、 滿意度調查系統、電子票券系統、高端客戶關係管理經營(CRM) 、專業企業入口網站(EIP) 等，打造多元化服務平台</p>
+                </div>
+                <div class="my-5">
+                    <p><img src="../Img/value-section06-graph.png"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section_06-->
+
+    <footer id="footerbox">
+        <ul class="copyright">
+            <li class="logo"><img src="https://www.freeliving.com.tw/must/images/logo/canlead_w2.png"></li>
+            <li class="txt">
+                服務提供商：肯驛國際(股)公司 ｜ 品牌系列：U.First全球禮賓服務<br>
+                服務品牌：禮贈品 ｜ 客服專線 04-2206-0000
+            </li>
+            <li class="certification">
+                <span><img src="https://www.freeliving.com.tw/must/images/certification/27001.png">ISO27001認證</span>
+                <span><img src="https://www.freeliving.com.tw/must/images/certification/9001.png">ISO9001認證</span>
+            </li>
+        </ul>
+    </footer>
+    <link href="https://www.freeliving.com.tw/_include/footer_brands.css" rel="stylesheet" type="text/css">
+    <footer id="footerbox">
+        <ul class="logo_list">
+            <li class="brands_title">
+                <h3 class="brands">肯驛國際所屬品牌</h3>
+                <h3 class="company">肯驛國際集團關係企業</h3>
+            </li>
+            <li class="brands brands_logo_bg">
+                <!--
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+             <a class="brands_logo"></a>
+-->
+            </li>
+            <li class="company">
+
+                <a href="#" target="_blank"><img src="https://www.freeliving.com.tw/must/images/logo/lifestyle_gray.png" class="lifestyle_gray"></a>
+                <a href="https://www.heycar.com.tw/" target="_blank"><img src="https://www.freeliving.com.tw/must/images/logo/heycar_gray.png" class="heycar_gray"></a>
+
+            </li>
+        </ul>
+    </footer>
+    <!---/.footer>
+
+</body>
+
+</HTML>

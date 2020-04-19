@@ -1,0 +1,86 @@
+body {
+  font-size: 18px;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 36px;
+}
+h1 {
+  font-size: 64px;
+  color: black;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 46px;
+  color: black;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+}
+
+button {
+  border: black solid 1px;
+  background-color: transparent;
+  height: 48px;
+  width: 160px;
+}
+
+.navbar {
+  padding-top: 2rem;
+}
+
+footer {
+  background-color: #f9f9f9;
+  min-height: 10rem;
+  margin-top: 7rem;
+}
+
+.contact{
+    padding-top: 2rem;
+    display: flex;
+}
+
+.contact__icon{
+    height: 28px;
+    width: 28px;
+    margin-right: 1rem;
+}
+
+/* index */
+.header {
+}
+.index {
+  text-align: center;
+}
+.index .description {
+  padding: 36px;
+}
+.index .skill {
+  height: 360px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.index .intro {
+  margin-top: 6rem;
+}
+.skill button {
+  margin: auto auto 0 auto;
+}
+.skill1--bg {
+  background-image: url(../img/index-skill1-bg.jpg);
+}
+.skill2--bg {
+  background-image: url(../img/index-skill2-bg.jpg);
+}
+.skill3--bg {
+  background-image: url(../img/index-skill3-bg.jpg);
+}
+
+@media (min-width: 768px) {
+  .index .skill {
+  }
+}

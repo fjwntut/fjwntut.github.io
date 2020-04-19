@@ -1,0 +1,99 @@
+/* banner */
+.banner {
+    background: url(../Img/partner-banner.jpg), #D3CFC6;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+@media screen and (min-width:867px) {
+    .banner {
+        background-attachment: fixed;
+    }
+}
+
+.banner .title {
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.9) 0%, rgba(245, 166, 34, 0.3) 100%);
+}
+
+/* section_01 */
+.section_01 {
+    background-color: #FFFFFF;
+}
+
+.section_01 .bg {
+    background: linear-gradient(270deg, rgba(54, 39, 11, 0.52) 0%, #FFFFFF 100%), url(../Img/partner-section01bg.jpg), #FFFFFF;
+    background-size: cover;
+    background-position: center;
+}
+
+.section_01 .text {
+    background: linear-gradient(90deg, #FFFFFF 100%);
+}
+
+/* Top-Down Background gradient in small screen */
+@media screen and (max-width: 780px) {
+    .section_01 .bg {
+        background: linear-gradient(360deg, rgba(54, 39, 11, 0.52) 0%, #FFFFFF 100%), url(../Img/partner-section01bg.jpg), #D3CFC6;
+        background-size: cover;
+        background-position: center;
+        padding-top: 100px;
+    }
+
+    .section_01 .text {
+        background: #FFFFFF);
+        padding-bottom: 50px;
+    }
+}
+
+.section_01 h2 {
+    color: 705A45;
+}
+
+.section_01 h3 {
+    color: 705A45;
+}
+
+.section_01 img {
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.section_01 a:hover {
+    background-color: white;
+    color: #705A45;
+    text-decoration: none;
+}
+
+
+
+/* section_02 */
+.section_02 {
+    background: url(../Img/partner-section02bg.png), #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    max-height: 3000px;
+}
+
+/* Top-Down Background gradient in small screen */
+@media screen and (max-width: 780px) {
+    color=white;
+}
+
+.section_02 h2 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.section_02 img {
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}

@@ -1,0 +1,148 @@
+body {
+    background-image: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 96%);
+}
+
+/* banner */
+.banner {
+    background: url(../Img/about-banner.jpg), #D3CFC6;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+
+}
+
+@media screen and (min-width:867px) {
+    .banner {
+        background-attachment: fixed;
+    }
+}
+
+.banner .title {
+    background: linear-gradient(180deg, rgba(51, 51, 51, 1) 0%, rgba(245, 166, 34, 0.3) 100%);
+}
+
+/* menu */
+.menu p {
+    text-align: center;
+}
+
+.menu img {
+    height: 80px;
+    filter: drop-shadow(0 10px 10px rgba(73, 54, 35, 0.21));
+}
+
+.menu .value {
+    text-align: center;
+    min-width: 150px;
+}
+
+/* section */
+
+.title {
+    text-align: center;
+}
+
+.title img {
+    width: 140px;
+}
+
+.section .container-fluid {
+    background: url(../Img/core-value-section-deco.png), #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 50% 60px;
+    background-size: 900px;
+    box-shadow: 0 2px 100px 0 rgba(198, 181, 165, 0.25);
+    margin-top: -180px;
+    padding-top: 180px;
+    padding-bottom: 30px;
+    min-height: 90%
+}
+
+.container {
+    display: block;
+}
+
+/* section 01 */
+.section_01 .client {
+    height: 180px;
+}
+
+.section_01 .client .row {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.section_01 .client-logo {
+    text-align: right;
+}
+
+.section_01 .client-logo img {
+    max-height: 120px;
+    max-width: 100%;
+}
+
+.section_01 .experience {
+    border-left: 2px solid rgba(112, 90, 69, 0.2);
+    height: 100%;
+}
+
+/* section_02 */
+
+.section_02 .tab .col-6 {
+    border-bottom: 1px solid #dab578;
+    text-align: center;
+}
+
+.section_02 button {
+    border: none;
+    background-color: white
+}
+
+.section_02 button:focus {
+    outline: none;
+}
+
+.section_02 .tab .col-6.selected {
+    border-bottom: 4px solid #dab578;
+}
+
+.section_02 .graph img {
+    max-width: 100%;
+}
+
+/* section 03 */
+.section_03 .col-md-6 .block {
+    text-align: center;
+    background-image: linear-gradient(0deg, #F9F9F9 2%, #FFFDFC 99%);
+}
+
+.section_03 h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* section 04 */
+.section_04 .icon img {
+    max-width: 100%;
+}
+
+/* section 05 */
+.section_05 img {
+    max-width: 90%;
+}
+
+/* section 06 */
+
+.section_06 .content {
+    max-width: 500px;
+}
+
+.section_06 p {
+    text-align: center;
+}
+
+.section_06 img {
+    max-width: 100%;
+}

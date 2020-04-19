@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <meta charset="UTF-8" />
+  <title>符嘉文 Foo Jia Wen</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+  <script src="greensock-js/src/minified/plugins/ScrollToPlugin.min.js"></script>
+  <script src="greensock-js/src/minified/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="index">
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+      <a class="navbar-brand" href="#"><img src="Img/logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span class="sr-only">符嘉文 Foo Jia Wen(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/about-us.html">關於我</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              作品
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">UI設計</a>
+              <a class="dropdown-item" href="#">游戲開發n</a>
+              <a class="dropdown-item" href="#">動畫制作</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/product.html">中文</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/partner.html">English</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <script>
+      $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 0) {
+          $(".bg-dark").addClass("opaque");
+        } else {
+          $(".bg-dark").removeClass("opaque");
+        }
+      });
+    </script>
+  </div>
+  <!--header-->
+
+  <div class="container">
+    <div class="intro">
+      <h1>幸福的互動設計創造者</h1>
+      <div class="description">
+        <p>熱愛團隊合作，兼具設計美感與程式力的雙棲生物：<br>
+          熟悉UIUX設計流程及各種設計軟體，還會做動畫、游戲等。在做設計過程中，意外愛上程式。<br>
+          積極尋找暑假與學期實習中，也接案架設網站，希望能讓想法走出校園走進社，創造美好！
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--/.banner-->
+  <div class="section section_01">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 skill skill1--bg">
+          <h2>UI UX 前端設計</h2>
+          <div class="skill__space"></div>
+          <button>查看作品</button>
+        </div>
+        <div class="col-md-4 skill skill2--bg">
+          <h2>游戲開發 </h2>
+          <div class="skill__space"></div>
+          <button>查看作品</button>
+        </div>
+        <div class="col-md-4 skill skill3--bg">
+          <h2>動畫制作</h2>
+          <div class="skill__space"></div>
+          <button>查看作品</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!---/.section_01--->
+  <footer id="footerbox">
+    <div class="container">
+      <div class="contact">
+        <a href="" class="phone"><img src="./img/footer-phone-icon.png" class=" contact__icon" alt="">+886 909624612</a>
+        <a href="mailto://foojiawen@outlook.com" class="mail"><img src="./img/footer-mail-icon.png" class=" contact__icon" alt="">foojiawen@outlook.com</a>
+        <div class="mr-auto"></div>
+        <a href="" class="fb"><img src="./img/footer-fb-icon.png" class=" contact__icon" alt=""></a>
+        <a href="mailto://foojiawen@outlook.com" class="behance"><img src="./img/footer-behance-icon.png" class=" contact__icon" alt=""></a>
+        <a href="" class="github"><img src="./img/footer-github-icon.png" class=" contact__icon" alt=""></a></div></div>
+    
+  </footer>
+  <!---/.footer--->
+</body>
+<script>
+  var controller = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".banner",
+    triggerHook: 0.8,
+  })
+    .setTween(
+      TweenMax.staggerFrom(
+        ".banner h1",
+        0.5,
+        {
+          y: 100,
+          opacity: 0,
+        },
+        0.1
+      )
+    )
+    .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".section_01",
+    triggerHook: 0.8,
+  })
+    .setTween(
+      TweenMax.staggerFromTo(
+        ".section_01 p",
+        0.5,
+        {
+          x: -100,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+        },
+        0.1
+      )
+    )
+    .addTo(controller);
+
+  var h = $(".section_02").height() * 0.9;
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".section_02",
+    triggerHook: 0.8,
+    duration: h,
+  })
+    .setTween(
+      TweenMax.staggerFromTo(
+        ".core-value-icon",
+        0.3,
+        {
+          scale: 0.1,
+          opacity: 0,
+          ease: Back.easeOut.config(1.7),
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          ease: Back.easeOut.config(1.7),
+        },
+        0.1
+      )
+    )
+    .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".section_03 h2",
+    triggerHook: 0.9,
+  })
+    .setTween(
+      TweenMax.staggerFromTo(
+        ".section_03 li",
+        0.5,
+        {
+          x: 0,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+        },
+        0.1
+      )
+    )
+    .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".section_03 h3",
+    triggerHook: 0.8,
+  })
+    .setTween(
+      TweenMax.staggerFromTo(
+        ".section_03 .spirit",
+        0.5,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+        0.1
+      )
+    )
+    .addTo(controller);
+
+  /* ScrollSnap for Sections */
+  /*
+  $(".section").each(
+      function(index){
+          var h = $(this).height();
+          var posy = $(this).offset().top;
+          console.log(h + "," + posy)
+          var scene = new ScrollMagic.Scene({
+              triggerElement: $(this),
+              duration: h,
+          }).on("enter",function(){TweenMax.to(window, 0.5, {scrollTo: {y:posy}})}).addIndicators().addTo(controller);
+          console.log($(this).className)
+      }
+  );
+  */
+</script>
+
+</html>
