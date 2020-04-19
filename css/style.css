@@ -1,4 +1,5 @@
-body {
+
+* {
   font-size: 18px;
   font-family: "Noto Sans TC", sans-serif;
   line-height: 36px;
@@ -29,21 +30,51 @@ button {
   padding-top: 2rem;
 }
 
+.navbar-brand{
+    color: black;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 900;
+}
+
 footer {
   background-color: #f9f9f9;
   min-height: 10rem;
   margin-top: 7rem;
+  padding: 2rem;
 }
 
 .contact{
-    padding-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.contact a{
+    margin-right: 3rem;
+        margin-bottom: 1em ;
+
+}
+
+.contact a:last-child{
+    margin-right: 0;
 }
 
 .contact__icon{
     height: 28px;
     width: 28px;
-    margin-right: 1rem;
+    display: inline-block;
+}
+
+.phone img,
+.mail img{
+    margin-right: 2rem;
+}
+
+a.phone ,
+a.mail {
+   color:#000;
+}
+.copyright{
+    margin-top: 1em ;
 }
 
 /* index */
@@ -59,7 +90,7 @@ footer {
   height: 360px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 50%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
