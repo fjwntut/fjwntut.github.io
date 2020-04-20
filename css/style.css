@@ -4,7 +4,8 @@
   font-weight: 400;
   line-height: 36px;
 }
-h1,h1>* {
+h1,
+h1 > * {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
@@ -15,27 +16,26 @@ h1,h1>* {
   font-size: 32px;
 }
 
-h2, h2>* {
+h2,
+h2 > * {
   font-size: 32px;
   line-height: 46px;
   color: black;
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 
-.h2--no-spacing{
+.h2--no-spacing {
   letter-spacing: 0rem;
 }
-
 
 button,
 a.button {
   border: black solid 1px;
   color: #000;
   background-color: transparent;
-  height: 48px;
-  width: 160px;
+  padding: 0.3rem 3rem;
   text-align: center;
   font-weight: 300;
 }
@@ -69,7 +69,7 @@ a.button:hover {
   padding-top: 99px;
 }
 
-.header--shadow{
+.header--shadow {
   box-shadow: #00000011 0px 2px;
 }
 
@@ -77,7 +77,7 @@ a.button:hover {
   background-color: #fff !important;
 }
 
-.contact--float{
+.contact--float {
   position: fixed;
   right: 10%;
   bottom: 2rem;
@@ -87,17 +87,16 @@ a.button:hover {
   flex-direction: column;
   justify-content: space-around;
   background-color: #ffffff00;
-  padding:4px;
+  padding: 4px;
   border-radius: 100px;
 }
 
-.contact--float a{
+.contact--float a {
   opacity: 0.3;
   transition: 0.2s ease-in-out;
 }
-.contact--float a:hover{
+.contact--float a:hover {
   opacity: 1;
-
 }
 
 footer {
@@ -200,18 +199,20 @@ a.mail {
   padding-bottom: 1rem;
   list-style: none;
 }
-.experience li{
+.experience li {
   margin-bottom: 1rem;
 }
 
-.experience .col-lg-5{
+.experience .col-lg-5 {
   padding-right: 2rem;
 }
-.about .date, .plans__name ,.plans__date{
+.about .date,
+.plans__name,
+.plans__date {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
-.experience .date{
+.experience .date {
   font-style: italic;
 }
 .section-03 {
@@ -220,13 +221,13 @@ a.mail {
   padding: 2rem;
 }
 
-.section-03 h2{
+.section-03 h2 {
   margin-top: -3rem;
 }
-.section-03 .row{
+.section-03 .row {
   margin-top: 3rem;
 }
-.section-03 .col-md-6{
+.section-03 .col-md-6 {
   margin-bottom: 2rem;
 }
 
@@ -246,7 +247,7 @@ a.mail {
 .card .button {
   margin: auto auto 0 auto;
 }
-.section-04{
+.section-04 {
   margin-top: 2rem;
 }
 .arrow-bg {

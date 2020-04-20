@@ -1,256 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=1"
-    />
-    <title>肯驛商務官網-關於我們</title>
 
-    <!--Bootstrap-->
-    <link
-      rel="stylesheet"
-      href="../bootstrap-4.4.1-dist/css/bootstrap.min.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <title>符嘉文 Foo Jia Wen 作品集 - 關於嘉文</title>
 
-    <!--GSAP-->
-    <script src="../greensock-js/src/minified/plugins/ScrollToPlugin.min.js"></script>
-    <script src="../greensock-js/src/minified/TweenMax.min.js"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="../bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 
-    <!--ScrollMagic-->
-    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
-    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-    <!--Font awesome-->
-    <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
+  <!--ScrollMagic-->
+  <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
 
-    <!--Google font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
-      rel="stylesheet"
-    />
+  <!--Font awesome-->
+  <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
 
-    <!--Custom Style Sheet-->
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
+  <!--Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
+    rel="stylesheet" />
 
-  <body class="about">
-    <div class="header fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">符嘉文 Foo Jia Wen</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!--Custom Style Sheet-->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  ><span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">關於我</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  作品
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="uiux">UI設計</a>
-                  <a class="dropdown-item" href="game">游戲開發</a>
-                  <a class="dropdown-item" href="animation">動畫制作</a>
-                </div>
-              </li>
-              <li class="nav-item d-none">
-                <a class="nav-link" href="html/en/about.html"
-                  ><i class="fas fa-globe-asia"></i>English</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <script>
-        $(window).scroll(function () {
-          var height = $(window).scrollTop();
-          if (height > 0) {
-            $(".bg-dark").addClass("opaque");
-          } else {
-            $(".bg-dark").removeClass("opaque");
-          }
-        });
-      </script>
-    </div>
-    <div class="container header-padding section-01">
-      <div class="row">
-        <div class="photo col-md-5">
-          <img src="../img/about-photo.jpg" alt="" />
-        </div>
+<body class="about">
+  <div class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">符嘉文 Foo Jia Wen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="col-md-7 ml-auto mt-auto pt-5 pl-md-5">
-          <h1 class="greet">
-            <span class="h1--small">你好，</span><br />我是嘉文
-          </h1>
-          <p class="self">
-            小時愛畫畫，想當畫家；少年愛看書，想當作家；<br />
-            後來發現科技可以實現更多幻想，<br />
-            於是從四季如夏的馬來西亞飄向北方留學，<br />
-            目前就讀國立臺北科技大學互動設計系三年級。
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--./section-01-->
-
-    <div class="container section-02 experience">
-      <div class="row">
-        <div class="col-lg-5 education mr-auto">
-          <h2>學歷</h2>
-          <ul>
-            <li><span class="text--grey date">2011-2016 </span><br />馬來西亞吉隆坡坤成獨立中學</li>
-            <li><span class="text--grey date">2017-2021 </span><br />國立臺北科技大學 互動設計系</li>
-          </ul>
-        </div>
-        <div class="col-lg-5 work">
-          <h2>工作經驗</h2>
-          <ul>
-            <li><span class="text--grey date">2019.07 - 2019.08</span><br />肯驛國際集團 前端設計實習</li>
-            <li><span class="text--grey date">2020.03 - 2020.07</span><br />互動設計系 程式設計入門 教學助理</li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">關於我</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                作品
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="uiux">UI設計</a>
+                <a class="dropdown-item" href="game">游戲開發</a>
+                <a class="dropdown-item" href="animation">動畫制作</a>
+              </div>
+            </li>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="html/en/about.html"><i class="fas fa-globe-asia"></i>English</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-    <!--./section-02-->
+    </nav>
+    <script>
+      $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 60) {
+          $(".header").addClass("header--shadow");
+        } else {
+          $(".header").removeClass("header--shadow");
+        }
+      });
+    </script>
+  </div>
+  <div class="container header-padding section-01">
+    <div class="row">
+      <div class="photo col-md-5">
+        <img src="../img/about-photo.jpg" alt="" />
+      </div>
 
-    <div class="section-03 plans">
-      <h2>計劃參與經驗</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <p class="plans__name">華碩 ProArt 夢想應援計劃</p>
-              <p class="date text--grey">2020 JAN</p>
-              <p class="desc">
-                經由北科大設計學院推薦，再獲華碩評選為3位計畫人選之一，資助出國參賽。
-              </p>
-              <a href="" class="button plan__action">相關報導</a>
-            </div>
+      <div class="col-md-7 ml-auto mt-auto pt-5 pl-md-5">
+        <h1 class="greet">
+          <span class="h1--small">你好，</span><br />我是嘉文
+        </h1>
+        <p class="self">
+          小時愛畫畫，想當畫家；少年愛看書，想當作家；<br />
+          後來發現科技可以實現更多幻想，<br />
+          於是從四季如夏的馬來西亞飄向北方留學，<br />
+          目前就讀國立臺北科技大學互動設計系三年級。
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--./section-01-->
+
+  <div class="container section-02 experience">
+    <div class="row">
+      <div class="col-lg-5 education mr-auto">
+        <h2>學歷</h2>
+        <ul>
+          <li><span class="text--grey date">2011-2016 </span><br />馬來西亞吉隆坡坤成獨立中學</li>
+          <li><span class="text--grey date">2017-2021 </span><br />國立臺北科技大學 互動設計系</li>
+        </ul>
+      </div>
+      <div class="col-lg-5 work">
+        <h2>工作經驗</h2>
+        <ul>
+          <li><span class="text--grey date">2019.07 - 2019.08</span><br />肯驛國際集團 前端設計實習</li>
+          <li><span class="text--grey date">2020.03 - 2020.07</span><br />互動設計系 程式設計入門 教學助理</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--./section-02-->
+
+  <div class="section-03 plans">
+    <h2>計劃參與經驗</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <p class="plans__name">華碩 ProArt 夢想應援計劃</p>
+            <p class="date text--grey">2020 JAN</p>
+            <p class="desc">
+              經由北科大設計學院推薦，再獲華碩評選為3位計畫人選之一，資助出國參賽。
+            </p>
+            <a href="" class="button plan__action">相關報導</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card w-lg-100">
-              <p class="plans__name">水環境研究中心 宣導動畫</p>
-              <p class="date text--grey">2018 AUG</p>
-              <p class="desc">
-                通過擬人動畫，以生動有趣的方式講解水利署前瞻基礎建設計劃之水庫集水區保育工程
-              </p>
-              <a href="" class="button plan__action">查看作品</a>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card w-lg-100">
+            <p class="plans__name">水環境研究中心 宣導動畫</p>
+            <p class="date text--grey">2018 AUG</p>
+            <p class="desc">
+              通過擬人動畫，以生動有趣的方式講解水利署前瞻基礎建設計劃之水庫集水區保育工程
+            </p>
+            <a href="" class="button plan__action">查看作品</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <p class="plans__name">USR計劃 原鄉導覽App</p>
-              <p class="date text--grey">2018 APR</p>
-              <p class="desc">
-                跨系合作推出旅游導覽Android應用【Masalu! 牡丹】，推廣原鄉旅游。
-              </p>
-              <a href="" class="button plan__action">查看作品</a>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <p class="plans__name">USR計劃 原鄉導覽App</p>
+            <p class="date text--grey">2018 APR</p>
+            <p class="desc">
+              跨系合作推出旅游導覽Android應用【Masalu! 牡丹】，推廣原鄉旅游。
+            </p>
+            <a href="" class="button plan__action">查看作品</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <p class="plans__name">政大附中 VR 教育游戲</p>
-              <p class="date text--grey">2017 NOV</p>
-              <p class="desc">
-                以 WebVR
-                創作【後羿的後裔】游戲，教育中學生太陽能板工作的科學，寓教於樂
-              </p>
-              <a href="" class="button plan__action">查看作品</a>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <p class="plans__name">政大附中 VR 教育游戲</p>
+            <p class="date text--grey">2017 NOV</p>
+            <p class="desc">
+              以 WebVR
+              創作【後羿的後裔】游戲，教育中學生太陽能板工作的科學，寓教於樂
+            </p>
+            <a href="" class="button plan__action">查看作品</a>
           </div>
         </div>
       </div>
     </div>
-    <!--./section-03-->
-    <div class="section-04 d-flex download arrow-bg">
-        <a href="" class="button">PDF 簡歷下載</a>
-    </div>
+  </div>
+  <!--./section-03-->
+  <div class="section-04 d-flex download arrow-bg">
+    <a href="" class="button">PDF 簡歷下載</a>
+  </div>
 
-    <footer id="footerbox">
-      <div class="container">
-        <div class="contact">
-          <div class="d-flex flex-wrap mx-auto ml-md-0">
-            <a href="" class="phone"
-              ><img
-                src="../img/footer-phone-icon.png"
-                class="contact__icon"
-                alt=""
-              />+886909624612</a
-            >
-            <a href="mailto://foojiawen@outlook.com" class="mail"
-              ><img
-                src="../img/footer-mail-icon.png"
-                class="contact__icon"
-                alt=""
-              />foojiawen@outlook.com</a
-            >
-          </div>
-          <div class="d-flex mx-auto mr-lg-0">
-            <a href="" class="fb"
-              ><img src="../img/footer-fb-icon.png" class="contact__icon" alt=""
-            /></a>
-            <a href="mailto://foojiawen@outlook.com" class="behance"
-              ><img
-                src="../img/footer-behance-icon.png"
-                class="contact__icon"
-                alt=""
-            /></a>
-
-            <a href="" class="github"
-              ><img
-                src="../img/footer-github-icon.png"
-                class="contact__icon"
-                alt=""
-            /></a>
-          </div>
+  <footer id="footerbox">
+    <div class="container">
+      <div class="contact">
+        <div class="d-flex flex-wrap mx-auto ml-md-0">
+          <a href="" class="phone"><img src="../img/footer-phone-icon.png" class="contact__icon"
+              alt="" />+886909624612</a>
+          <a href="mailto://foojiawen@outlook.com" class="mail"><img src="../img/footer-mail-icon.png"
+              class="contact__icon" alt="" />foojiawen@outlook.com</a>
         </div>
-        <div class="copyright text--grey">
-          <p>Copyright © 2020 by Foo Jia Wen</p>
+        <div class="d-flex mx-auto mr-md-0">
+          <a href="https://www.facebook.com/F00JiaWen" class="fb"><img src="../img/footer-fb-icon.png"
+              class="contact__icon" alt=""></a>
+          <a href="https://www.behance.net/foojiawen" class="behance"><img src="../img/footer-behance-icon.png"
+              class=" contact__icon" alt=""></a>
+          <a href="https://github.com/fjwntut" class="github"><img src="../img/footer-github-icon.png"
+              class=" contact__icon" alt=""></a>
         </div>
       </div>
-    </footer>
-    <!---/.footer--->
-  </body>
+      <div class="copyright text--grey">
+        <p>Copyright © 2020 by Foo Jia Wen</p>
+      </div>
+    </div>
+  </footer>
+  <!---/.footer--->
+</body>
+
 </html>
