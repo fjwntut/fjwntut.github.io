@@ -19,13 +19,24 @@ h2 {
   font-weight: 900;
 }
 
-button {
+button, a.button {
   border: black solid 1px;
+  color: #000;
   background-color: transparent;
   height: 48px;
   width: 160px;
 }
 
+button:hover, a.button:hover{
+  background-color: #000;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.text--grey{
+  color: #B8B8B8;
+}
 .navbar {
   padding-top: 2rem;
 }
@@ -34,6 +45,18 @@ button {
     color: black;
     font-family: "Noto Serif TC", serif;
     font-weight: 900;
+}
+
+.nav-item{
+  padding-left: 1rem;
+}
+
+.header-padding{
+  padding-top: 99px;
+}
+
+.navbar-light.bg-light{
+  background-color: #fff!important;
 }
 
 footer {
@@ -75,11 +98,11 @@ a.mail {
 }
 .copyright{
     margin-top: 1em ;
+
 }
 
 /* index */
-.header {
-}
+
 .index {
   text-align: center;
 }
@@ -98,7 +121,7 @@ a.mail {
 .index .intro {
   margin-top: 6rem;
 }
-.skill button {
+.skill .button, .skill button {
   margin: auto auto 0 auto;
 }
 .skill1--bg {

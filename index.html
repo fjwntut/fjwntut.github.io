@@ -21,15 +21,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
+  <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+  <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="index">
-  <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="header fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">符嘉文 Foo Jia Wen</a>
+        <a class="navbar-brand" href="index.html">符嘉文 Foo Jia Wen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,10 +41,10 @@
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><span class="sr-only">符嘉文 Foo Jia Wen(current)</span></a>
+              <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/about-us.html">關於我</a>
+              <a class="nav-link" href="html/about.html">關於我</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -50,16 +52,13 @@
                 作品
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">UI設計</a>
-                <a class="dropdown-item" href="#">游戲開發n</a>
-                <a class="dropdown-item" href="#">動畫制作</a>
+                <a class="dropdown-item" href="uiux">UI設計</a>
+                <a class="dropdown-item" href="game">游戲開發</a>
+                <a class="dropdown-item" href="animation">動畫制作</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/product.html">中文</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/partner.html">English</a>
+              <a class="nav-link" href="html/partner.html"><i class="fas fa-globe-asia"></i>English</a>
             </li>
           </ul>
         </div>
@@ -78,7 +77,7 @@
   </div>
   <!--header-->
 
-  <div class="container">
+  <div class="container header-padding">
     <div class="intro">
       <h1>幸福的互動設計創造者</h1>
       <div class="description">
@@ -96,7 +95,7 @@
         <div class="col-md-4 skill skill1--bg">
           <h2>UI UX 前端設計</h2>
           <div class="skill__space"></div>
-          <button>查看作品</button>
+          <a href="./html/ui.html" class="button">查看作品</a>
         </div>
         <div class="col-md-4 skill skill2--bg">
           <h2>游戲開發 </h2>
@@ -117,7 +116,8 @@
     <div class="container">
       <div class="contact">
         <div class="d-flex flex-wrap mx-auto ml-md-0">
-          <a href="" class="phone "><img src="./img/footer-phone-icon.png" class=" contact__icon" alt="">+886909624612</a>
+          <a href="" class="phone "><img src="./img/footer-phone-icon.png" class=" contact__icon"
+              alt="">+886909624612</a>
           <a href="mailto://foojiawen@outlook.com" class="mail"><img src="./img/footer-mail-icon.png"
               class=" contact__icon" alt="">foojiawen@outlook.com</a>
         </div>
@@ -128,7 +128,7 @@
           <a href="" class="github"><img src="./img/footer-github-icon.png" class=" contact__icon" alt=""></a>
         </div>
       </div>
-      <div class="copyright">
+      <div class="copyright text--grey">
         <p>Copyright © 2020 by Foo Jia Wen</p>
       </div>
     </div>
