@@ -1,69 +1,103 @@
-
 * {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
   line-height: 36px;
 }
-h1 {
+h1,h1>* {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
 
-.h1--small{
+.h1--small {
   font-size: 32px;
-  font-family: "Noto Serif TC", serif;
-  font-weight: 900;
 }
 
-h2 {
+h2, h2>* {
   font-size: 32px;
   line-height: 46px;
   color: black;
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
+  letter-spacing: 1rem;
 }
 
-button, a.button {
+.h2--no-spacing{
+  letter-spacing: 0rem;
+}
+
+
+button,
+a.button {
   border: black solid 1px;
   color: #000;
   background-color: transparent;
   height: 48px;
   width: 160px;
   text-align: center;
+  font-weight: 300;
 }
 
-button:hover, a.button:hover{
+button:hover,
+a.button:hover {
   background-color: #000;
   color: #fff;
   transition: 0.2s ease-in-out;
   text-decoration: none;
 }
 
-.text--grey{
-  color: #B8B8B8;
+.text--grey {
+  opacity: 0.3;
 }
 .navbar {
   padding-top: 2rem;
 }
 
-.navbar-brand{
-    color: black;
-    font-family: "Noto Serif TC", serif;
-    font-weight: 900;
+.navbar-brand {
+  color: black;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
 }
 
-.nav-item{
+.nav-item {
   padding-left: 1rem;
 }
 
-.header-padding{
+.header-padding {
   padding-top: 99px;
 }
 
-.navbar-light.bg-light{
-  background-color: #fff!important;
+.header--shadow{
+  box-shadow: #00000011 0px 2px;
+}
+
+.navbar-light.bg-light {
+  background-color: #fff !important;
+}
+
+.contact--float{
+  position: fixed;
+  right: 10%;
+  bottom: 2rem;
+  height: 40%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff00;
+  padding:4px;
+  border-radius: 100px;
+}
+
+.contact--float a{
+  opacity: 0.3;
+  transition: 0.2s ease-in-out;
+}
+.contact--float a:hover{
+  opacity: 1;
+
 }
 
 footer {
@@ -73,39 +107,38 @@ footer {
   padding: 2rem;
 }
 
-.contact{
-    display: flex;
-    flex-wrap: wrap;
+.contact {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.contact a{
-    margin-right: 3rem;
-        margin-bottom: 1em ;
-
+.contact a {
+  margin-right: 3rem;
+  margin-bottom: 1em;
 }
 
-.contact a:last-child{
-    margin-right: 0;
+.contact a:last-child {
+  margin-right: 0;
 }
 
-.contact__icon{
-    height: 28px;
-    width: 28px;
-    display: inline-block;
+.contact__icon {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
 }
 
-.phone img,
-.mail img{
-    margin-right: 2rem;
+footer .phone img,
+footer .mail img {
+  margin-right: 2rem;
 }
 
-a.phone ,
+a.phone,
 a.mail {
-   color:#000;
+  color: #000;
 }
-.copyright{
-    margin-top: 1em ;
-
+.copyright {
+  margin-top: 1em;
+  text-align: center;
 }
 
 /* index */
@@ -128,7 +161,8 @@ a.mail {
 .index .intro {
   margin-top: 6rem;
 }
-.skill .button, .skill button {
+.skill .button,
+.skill button {
   margin: auto auto 0 auto;
 }
 .skill1--bg {
@@ -148,29 +182,76 @@ a.mail {
 
 /* about */
 
-.section-01,.section-02{
+.section-01,
+.section-02,
+.section-03 {
   margin-top: 6rem;
 }
-.about .photo img{
+.about .photo img {
   width: 100%;
-  box-shadow: #EDF3F5 2rem 2rem;
+  box-shadow: #edf3f5 2rem 2rem;
 }
 
-.experience ul{
-display: block;
-margin-left: 2rem;
-box-shadow: #EDF3F5 1rem -1rem 0 1rem;
-background-color:  #EDF3F5;
+.experience ul {
+  display: block;
+  margin-left: 2rem;
+  box-shadow: #edf3f5 1rem -1rem 0 1rem;
+  background-color: #edf3f5;
+  padding-bottom: 1rem;
+  list-style: none;
+}
+.experience li{
+  margin-bottom: 1rem;
 }
 
-.section_03{
-  background-color:  #EDF3F5;
-
+.experience .col-lg-5{
+  padding-right: 2rem;
+}
+.about .date, .plans__name ,.plans__date{
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+}
+.experience .date{
+  font-style: italic;
+}
+.section-03 {
+  background-color: #edf3f5;
+  text-align: center;
+  padding: 2rem;
 }
 
+.section-03 h2{
+  margin-top: -3rem;
+}
+.section-03 .row{
+  margin-top: 3rem;
+}
+.section-03 .col-md-6{
+  margin-bottom: 2rem;
+}
+
+.section-03 .card {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.section-03 .card .plans__name {
+  margin-bottom: 0;
+}
+
+.card .button {
+  margin: auto auto 0 auto;
+}
+.section-04{
+  margin-top: 2rem;
+}
 .arrow-bg {
   background-image: url(../img/about-download-arrow.svg);
-  height: 150px;
+  height: 130px;
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -178,7 +259,7 @@ background-color:  #EDF3F5;
   flex-direction: column;
 }
 
-.download .button{
+.download .button {
   margin: auto auto 0 auto;
   display: block;
   border-radius: 100px;

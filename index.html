@@ -11,19 +11,19 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css" />
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
   <script src="ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
   <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
   <script src="ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
-  <script src="greensock-js/src/minified/plugins/ScrollToPlugin.min.js"></script>
-  <script src="greensock-js/src/minified/TweenMax.min.js"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
   <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -57,25 +57,43 @@
                 <a class="dropdown-item" href="animation">動畫制作</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/partner.html"><i class="fas fa-globe-asia"></i>English</a>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="html/en/index.html"><i class="fas fa-globe-asia"></i>English</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <script>
+      $(window).on("scroll", function () {
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+          // when scroll to bottom of the page
+        }
+      });
       $(window).scroll(function () {
+
         var height = $(window).scrollTop();
-        if (height > 0) {
-          $(".bg-dark").addClass("opaque");
+        if (height > 60) {
+          $(".header").addClass("header--shadow");
         } else {
-          $(".bg-dark").removeClass("opaque");
+          $(".header").removeClass("header--shadow");
         }
       });
     </script>
   </div>
   <!--header-->
+
+  <div class="contact--float d-none">
+    <a href="" class="phone "><img src="./img/footer-phone-icon.png" class=" contact__icon" alt=""></a>
+    <a href="mailto://foojiawen@outlook.com" class="mail"><img src="./img/footer-mail-icon.png" class=" contact__icon"
+        alt=""></a>
+    <a href="" class="fb"><img src="./img/footer-fb-icon.png" class="contact__icon" alt=""></a>
+    <a href="mailto://foojiawen@outlook.com" class="behance"><img src="./img/footer-behance-icon.png"
+        class=" contact__icon" alt=""></a>
+    <a href="" class="github"><img src="./img/footer-github-icon.png" class=" contact__icon" alt=""></a>
+  </div>
 
   <div class="container header-padding">
     <div class="intro">
@@ -93,7 +111,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 skill skill1--bg">
-          <h2>UI UX 前端設計</h2>
+          <h2><span class="h2--no-spacing">UI UX </span>前端設計</h2>
           <a href="./html/ui.html" class="button">查看作品</a>
         </div>
         <div class="col-md-4 skill skill2--bg">
@@ -137,123 +155,18 @@
   var controller = new ScrollMagic.Controller();
 
   var scene = new ScrollMagic.Scene({
-    triggerElement: ".banner",
-    triggerHook: 0.8,
+    triggerElement: "#footerbox",
+    triggerHook: 1,
   })
-    .setTween(
-      TweenMax.staggerFrom(
-        ".banner h1",
-        0.5,
-        {
-          y: 100,
-          opacity: 0,
-        },
-        0.1
-      )
+    .setTween(TweenMax.staggerFromTo(".contact--float", 0.5, {
+      
+            opacity: 1
+        }, {
+            opacity: 0
+        }, 0.1)
     )
     .addTo(controller);
 
-  var scene = new ScrollMagic.Scene({
-    triggerElement: ".section_01",
-    triggerHook: 0.8,
-  })
-    .setTween(
-      TweenMax.staggerFromTo(
-        ".section_01 p",
-        0.5,
-        {
-          x: -100,
-          opacity: 0,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        },
-        0.1
-      )
-    )
-    .addTo(controller);
-
-  var h = $(".section_02").height() * 0.9;
-  var scene = new ScrollMagic.Scene({
-    triggerElement: ".section_02",
-    triggerHook: 0.8,
-    duration: h,
-  })
-    .setTween(
-      TweenMax.staggerFromTo(
-        ".core-value-icon",
-        0.3,
-        {
-          scale: 0.1,
-          opacity: 0,
-          ease: Back.easeOut.config(1.7),
-        },
-        {
-          scale: 1,
-          opacity: 1,
-          ease: Back.easeOut.config(1.7),
-        },
-        0.1
-      )
-    )
-    .addTo(controller);
-
-  var scene = new ScrollMagic.Scene({
-    triggerElement: ".section_03 h2",
-    triggerHook: 0.9,
-  })
-    .setTween(
-      TweenMax.staggerFromTo(
-        ".section_03 li",
-        0.5,
-        {
-          x: 0,
-          opacity: 0,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        },
-        0.1
-      )
-    )
-    .addTo(controller);
-
-  var scene = new ScrollMagic.Scene({
-    triggerElement: ".section_03 h3",
-    triggerHook: 0.8,
-  })
-    .setTween(
-      TweenMax.staggerFromTo(
-        ".section_03 .spirit",
-        0.5,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-        },
-        0.1
-      )
-    )
-    .addTo(controller);
-
-  /* ScrollSnap for Sections */
-  /*
-  $(".section").each(
-      function(index){
-          var h = $(this).height();
-          var posy = $(this).offset().top;
-          console.log(h + "," + posy)
-          var scene = new ScrollMagic.Scene({
-              triggerElement: $(this),
-              duration: h,
-          }).on("enter",function(){TweenMax.to(window, 0.5, {scrollTo: {y:posy}})}).addIndicators().addTo(controller);
-          console.log($(this).className)
-      }
-  );
-  */
 </script>
 
 </html>

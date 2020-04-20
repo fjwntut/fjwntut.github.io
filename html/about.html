@@ -40,7 +40,7 @@
 
     <!--Google font-->
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
       rel="stylesheet"
     />
 
@@ -73,8 +73,8 @@
                   ><span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./html/about.html">關於我</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">關於我</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -94,8 +94,8 @@
                   <a class="dropdown-item" href="animation">動畫制作</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/partner.html"
+              <li class="nav-item d-none">
+                <a class="nav-link" href="html/en/about.html"
                   ><i class="fas fa-globe-asia"></i>English</a
                 >
               </li>
@@ -120,7 +120,7 @@
           <img src="../img/about-photo.jpg" alt="" />
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7 ml-auto mt-auto pt-5 pl-md-5">
           <h1 class="greet">
             <span class="h1--small">你好，</span><br />我是嘉文
           </h1>
@@ -137,32 +137,32 @@
 
     <div class="container section-02 experience">
       <div class="row">
-        <div class="col-md-5 education mr-auto">
+        <div class="col-lg-5 education mr-auto">
           <h2>學歷</h2>
           <ul>
-            <li>2011-2016 <br />馬來西亞吉隆坡坤成獨立中學</li>
-            <li>2017-2021 <br />國立臺北科技大學 互動設計系</li>
+            <li><span class="text--grey date">2011-2016 </span><br />馬來西亞吉隆坡坤成獨立中學</li>
+            <li><span class="text--grey date">2017-2021 </span><br />國立臺北科技大學 互動設計系</li>
           </ul>
         </div>
-        <div class="col-md-5 work">
+        <div class="col-lg-5 work">
           <h2>工作經驗</h2>
           <ul>
-            <li>2019.07 - 2019.08<br />肯驛國際集團 前端設計實習</li>
-            <li>2020.03 - 2020.07<br />互動設計系 程式設計入門 教學助理</li>
+            <li><span class="text--grey date">2019.07 - 2019.08</span><br />肯驛國際集團 前端設計實習</li>
+            <li><span class="text--grey date">2020.03 - 2020.07</span><br />互動設計系 程式設計入門 教學助理</li>
           </ul>
         </div>
       </div>
     </div>
     <!--./section-02-->
 
-    <div class="section03 plans">
+    <div class="section-03 plans">
       <h2>計劃參與經驗</h2>
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="card">
               <p class="plans__name">華碩 ProArt 夢想應援計劃</p>
-              <p class="date">2020 JAN</p>
+              <p class="date text--grey">2020 JAN</p>
               <p class="desc">
                 經由北科大設計學院推薦，再獲華碩評選為3位計畫人選之一，資助出國參賽。
               </p>
@@ -170,9 +170,9 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="card">
+            <div class="card w-lg-100">
               <p class="plans__name">水環境研究中心 宣導動畫</p>
-              <p class="date">2018 AUG</p>
+              <p class="date text--grey">2018 AUG</p>
               <p class="desc">
                 通過擬人動畫，以生動有趣的方式講解水利署前瞻基礎建設計劃之水庫集水區保育工程
               </p>
@@ -182,7 +182,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="card">
               <p class="plans__name">USR計劃 原鄉導覽App</p>
-              <p class="date">2018 APR</p>
+              <p class="date text--grey">2018 APR</p>
               <p class="desc">
                 跨系合作推出旅游導覽Android應用【Masalu! 牡丹】，推廣原鄉旅游。
               </p>
@@ -192,7 +192,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="card">
               <p class="plans__name">政大附中 VR 教育游戲</p>
-              <p class="date">2017 NOV</p>
+              <p class="date text--grey">2017 NOV</p>
               <p class="desc">
                 以 WebVR
                 創作【後羿的後裔】游戲，教育中學生太陽能板工作的科學，寓教於樂
@@ -204,7 +204,7 @@
       </div>
     </div>
     <!--./section-03-->
-    <div class="section04 d-flex download arrow-bg">
+    <div class="section-04 d-flex download arrow-bg">
         <a href="" class="button">PDF 簡歷下載</a>
     </div>
 
@@ -214,33 +214,33 @@
           <div class="d-flex flex-wrap mx-auto ml-md-0">
             <a href="" class="phone"
               ><img
-                src="./img/footer-phone-icon.png"
+                src="../img/footer-phone-icon.png"
                 class="contact__icon"
                 alt=""
               />+886909624612</a
             >
             <a href="mailto://foojiawen@outlook.com" class="mail"
               ><img
-                src="./img/footer-mail-icon.png"
+                src="../img/footer-mail-icon.png"
                 class="contact__icon"
                 alt=""
               />foojiawen@outlook.com</a
             >
           </div>
-          <div class="d-flex mx-auto mr-md-0">
+          <div class="d-flex mx-auto mr-lg-0">
             <a href="" class="fb"
-              ><img src="./img/footer-fb-icon.png" class="contact__icon" alt=""
+              ><img src="../img/footer-fb-icon.png" class="contact__icon" alt=""
             /></a>
             <a href="mailto://foojiawen@outlook.com" class="behance"
               ><img
-                src="./img/footer-behance-icon.png"
+                src="../img/footer-behance-icon.png"
                 class="contact__icon"
                 alt=""
             /></a>
 
             <a href="" class="github"
               ><img
-                src="./img/footer-github-icon.png"
+                src="../img/footer-github-icon.png"
                 class="contact__icon"
                 alt=""
             /></a>
