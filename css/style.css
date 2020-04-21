@@ -7,7 +7,7 @@
 }
 
 h1,
-h1>* {
+h1 > * {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
@@ -19,7 +19,7 @@ h1>* {
 }
 
 h2,
-h2>* {
+h2 > * {
   font-size: 32px;
   line-height: 46px;
   color: black;
@@ -30,6 +30,12 @@ h2>* {
 
 .h2--no-spacing {
   letter-spacing: 0rem;
+}
+
+.serif,
+.serif > * {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
 }
 
 a.link--text {
@@ -175,7 +181,6 @@ a.mail {
 
 .scrollable ::-webkit-scrollbar {
   display: none;
-
 }
 
 /* index */
@@ -209,19 +214,20 @@ a.mail {
 }
 
 .skill1--bg {
-  background-image: url(../img/index-skill1-bg.jpg);
+  background-image: url(../img/index-skill1-bg.svg);
 }
 
 .skill2--bg {
-  background-image: url(../img/index-skill2-bg.jpg);
+  background-image: url(../img/index-skill2-bg.svg);
 }
 
 .skill3--bg {
-  background-image: url(../img/index-skill3-bg.jpg);
+  background-image: url(../img/index-skill3-bg.svg);
 }
 
 @media (min-width: 768px) {
-  .index .skill {}
+  .index .skill {
+  }
 }
 
 /* about */
@@ -340,7 +346,7 @@ a.mail {
   padding: 3rem 0 3rem 0;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .work-item .scrollable-parent {
     width: 95%;
   }
@@ -376,14 +382,13 @@ a.mail {
   object-fit: cover;
 }
 
-
 .work-item__info {
   align-items: flex-end;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.work-item__info>* {
+.work-item__info > * {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -415,4 +420,35 @@ a.mail {
 
 .work-item .link--button:first-child {
   margin-left: 0;
+}
+.ui-works .section-01 {
+  padding-bottom: 6rem;
+}
+.ui-works .section-01 .title {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ui-works .section-01 .skill1--bg {
+  background-image: url(../img/ui-title-bg.svg);
+  background-size: contain;
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.ui-works h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3em;
+}
+.ui-works .text {
+  margin-top: 4rem;
+}
+.tools {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+}
+
+.section-01 p {
+  margin-bottom: 0;
 }
