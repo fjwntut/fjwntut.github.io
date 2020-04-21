@@ -63,6 +63,11 @@ a.button:hover {
 
 .nav-item {
   padding-left: 1rem;
+  text-align: left;
+}
+
+.dropdown-item {
+  text-align: center;
 }
 
 .header-padding {
@@ -146,7 +151,8 @@ a.mail {
   text-align: center;
 }
 .index .description {
-  padding: 36px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .index .skill {
   height: 360px;
@@ -214,6 +220,10 @@ a.mail {
 }
 .experience .date {
   font-style: italic;
+}
+
+.experience .desc {
+  margin-top: -0.5rem;
 }
 .section-03 {
   background-color: #edf3f5;
