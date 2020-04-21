@@ -237,7 +237,8 @@ a.mail {
 .section-03 {
   background-color: #edf3f5;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section-03 h2 {
