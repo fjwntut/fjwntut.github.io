@@ -291,15 +291,16 @@ a.mail {
   padding: 0px;
 }
 
-.work-item {
+.work-item .col-md-5 {
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .work-item__media {
 }
 
 .work-item__media img {
-  object-fit: contain;
-  height: 300px;
+  width: 100%;
 }
 
 .work-item__info {
@@ -326,9 +327,11 @@ a.mail {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.link--button {
+.work-item .link--button {
   width: 100%;
   margin-left: 2rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .link--button:first-child {
@@ -336,5 +339,9 @@ a.mail {
 }
 
 .work-item--bg-01 {
-  background-color: #edfaf5;
+  background-color: #fff;
+}
+
+.work-item--bg-02 {
+  background-color: #e9e7e2;
 }
