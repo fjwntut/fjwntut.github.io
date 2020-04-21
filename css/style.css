@@ -284,3 +284,57 @@ a.mail {
   display: block;
   border-radius: 100px;
 }
+
+/* work */
+.work-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.work-item {
+}
+
+.work-item__media {
+}
+
+.work-item__media img {
+  object-fit: contain;
+  height: 300px;
+}
+
+.work-item__info {
+  align-items: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.work-item__info > * {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+}
+
+.work-item__title {
+  margin-right: 1rem;
+}
+.work-item__tool {
+  margin-bottom: 1rem;
+}
+.tool-list {
+  list-style: none;
+  padding: 0;
+}
+.action-buttons {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.link--button {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.link--button:first-child {
+  margin-left: 0;
+}
+
+.work-item--bg-01 {
+  background-color: #edfaf5;
+}
