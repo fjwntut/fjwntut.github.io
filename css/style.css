@@ -5,8 +5,9 @@
   line-height: 2;
   transition: 0.2s ease-in-out;
 }
+
 h1,
-h1 > * {
+h1>* {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
@@ -18,7 +19,7 @@ h1 > * {
 }
 
 h2,
-h2 > * {
+h2>* {
   font-size: 32px;
   line-height: 46px;
   color: black;
@@ -30,11 +31,13 @@ h2 > * {
 .h2--no-spacing {
   letter-spacing: 0rem;
 }
+
 a.link--text {
   font-weight: 500;
   opacity: 0.3;
   color: #000;
 }
+
 a.link--text:hover {
   text-decoration: underline;
   opacity: 1;
@@ -61,6 +64,7 @@ a.link--button:hover {
 .text--grey {
   opacity: 0.3;
 }
+
 .navbar {
   padding-top: 2rem;
 }
@@ -114,6 +118,7 @@ a.link--button:hover {
   opacity: 0.3;
   transition: 0.2s ease-in-out;
 }
+
 .contact--float a:hover {
   opacity: 1;
 }
@@ -154,9 +159,23 @@ a.phone,
 a.mail {
   color: #000;
 }
+
 .copyright {
   margin-top: 1em;
   text-align: center;
+}
+
+.scrollable-parent {
+  max-width: 100%;
+}
+
+.scrollable {
+  overflow-x: auto;
+}
+
+.scrollable ::-webkit-scrollbar {
+  display: none;
+
 }
 
 /* index */
@@ -164,10 +183,12 @@ a.mail {
 .index {
   text-align: center;
 }
+
 .index .description {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .index .skill {
   height: 360px;
   background-size: contain;
@@ -177,26 +198,30 @@ a.mail {
   display: flex;
   flex-direction: column;
 }
+
 .index .intro {
   margin-top: 6rem;
 }
+
 .skill .button,
 .skill .link--button {
   margin: auto auto 0 auto;
 }
+
 .skill1--bg {
   background-image: url(../img/index-skill1-bg.jpg);
 }
+
 .skill2--bg {
   background-image: url(../img/index-skill2-bg.jpg);
 }
+
 .skill3--bg {
   background-image: url(../img/index-skill3-bg.jpg);
 }
 
 @media (min-width: 768px) {
-  .index .skill {
-  }
+  .index .skill {}
 }
 
 /* about */
@@ -206,6 +231,7 @@ a.mail {
 .section-03 {
   margin-top: 6rem;
 }
+
 .about .photo img {
   width: 100%;
   box-shadow: #edf3f5 2rem 2rem;
@@ -219,6 +245,7 @@ a.mail {
   padding-bottom: 1rem;
   list-style: none;
 }
+
 .experience li {
   margin-bottom: 1rem;
 }
@@ -226,12 +253,14 @@ a.mail {
 .experience .col-lg-5 {
   padding-right: 2rem;
 }
+
 .about .date,
 .plans__name,
 .plans__date {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
+
 .experience .date {
   font-style: italic;
 }
@@ -239,6 +268,7 @@ a.mail {
 .experience .desc {
   margin-top: -0.5rem;
 }
+
 .section-03 {
   background-color: #edf3f5;
   text-align: center;
@@ -249,9 +279,11 @@ a.mail {
 .section-03 h2 {
   margin-top: -3rem;
 }
+
 .section-03 .row {
   margin-top: 3rem;
 }
+
 .section-03 .col-md-6 {
   margin-bottom: 2rem;
 }
@@ -272,9 +304,11 @@ a.mail {
 .card .button {
   margin: auto auto 0 auto;
 }
+
 .section-04 {
   margin-top: 2rem;
 }
+
 .arrow-bg {
   background-image: url(../img/about-download-arrow.svg);
   height: 130px;
@@ -302,11 +336,52 @@ a.mail {
   justify-content: flex-end;
 }
 
-.work-item__media {
+.work-item__media {}
+
+.work-item__media .scrollable {}
+
+.work-item__media .mockup--phone {
+  background-color: #000;
+  border-radius: 30px 30px 0 0;
+  padding: 40px 10px 0px 10px;
+  margin: 4rem 3rem 0 3rem;
+  -webkit-filter: drop-shadow(12px 12px 25px #00000022);
 }
 
-.work-item__media img {
-  width: 100%;
+.work-item__media .mockup--phone:last-child,
+.mockup--web:last-child {
+  margin-right: 4rem;
+}
+
+.work-item__media .mockup--phone img {
+  height: 400px;
+  width: 225px;
+  object-position: 0% 0%;
+  object-fit: cover;
+}
+
+.work-item__media .mockup--web {
+  background-color: #000;
+  border-radius: 30px 30px 0 0;
+  padding: 40px 10px 0px 10px;
+  margin: 4rem 3rem 0 3rem;
+  -webkit-filter: drop-shadow(12px 12px 25px #00000022);
+}
+
+.work-item__media .mockup--web img {
+  height: 400px;
+  width: 540px;
+  object-position: 0% 0%;
+  object-fit: cover;
+}
+
+.work-item__media .mockup {
+  background-color: #000;
+  border-radius: 30px;
+  padding: 20px 10px 10px 0px;
+  margin: 4rem 2rem 0 2rem;
+  height: 400px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(19, 131, 116, 0.39));
 }
 
 .work-item__info {
@@ -314,7 +389,8 @@ a.mail {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.work-item__info > * {
+
+.work-item__info>* {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -322,17 +398,21 @@ a.mail {
 .work-item__title {
   margin-right: 1rem;
 }
+
 .work-item__tool {
   margin-bottom: 1rem;
 }
+
 .tool-list {
   list-style: none;
   padding: 0;
 }
+
 .action-buttons {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+
 .work-item .link--button {
   width: 100%;
   margin-left: 2rem;
@@ -345,7 +425,7 @@ a.mail {
 }
 
 .work-item--bg-01 {
-  background-color: #fff;
+  background-color: #dcebe8;
 }
 
 .work-item--bg-02 {
