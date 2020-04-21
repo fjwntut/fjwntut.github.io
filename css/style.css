@@ -335,7 +335,7 @@ a.mail {
   padding-right: 0;
 }
 
-.link--button:first-child {
+.work-item .link--button:first-child {
   margin-left: 0;
 }
 
