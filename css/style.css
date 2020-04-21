@@ -29,18 +29,18 @@ h2 > * {
 .h2--no-spacing {
   letter-spacing: 0rem;
 }
-a.text-link {
+a.link--text {
   font-weight: 500;
   opacity: 0.3;
   color: #000;
 }
-a.text-link:hover {
+a.link--text:hover {
   text-decoration: underline;
   opacity: 1;
 }
 
 button,
-a.button {
+a.link--button {
   border: black solid 1px;
   color: #000;
   background-color: transparent;
@@ -50,7 +50,7 @@ a.button {
 }
 
 button:hover,
-a.button:hover {
+a.link--button:hover {
   background-color: #000;
   color: #fff;
   transition: 0.2s ease-in-out;
@@ -176,7 +176,7 @@ a.mail {
   margin-top: 6rem;
 }
 .skill .button,
-.skill button {
+.skill .link--button {
   margin: auto auto 0 auto;
 }
 .skill1--bg {
@@ -279,7 +279,7 @@ a.mail {
   flex-direction: column;
 }
 
-.download .button {
+.download .link--button {
   margin: auto auto 0 auto;
   display: block;
   border-radius: 100px;
