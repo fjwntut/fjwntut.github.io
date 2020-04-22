@@ -7,7 +7,7 @@
 }
 
 h1,
-h1 > * {
+h1>* {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
@@ -19,7 +19,7 @@ h1 > * {
 }
 
 h2,
-h2 > * {
+h2>* {
   font-size: 32px;
   line-height: 46px;
   color: black;
@@ -33,7 +33,7 @@ h2 > * {
 }
 
 .serif,
-.serif > * {
+.serif>* {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -226,8 +226,7 @@ a.mail {
 }
 
 @media (min-width: 768px) {
-  .index .skill {
-  }
+  .index .skill {}
 }
 
 /* about */
@@ -337,8 +336,7 @@ a.mail {
   padding: 0px;
 }
 
-.work-item .col-md-5,
-.work-item .col-md-4 {
+.work-item .work-item__text {
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -389,7 +387,7 @@ a.mail {
   margin-bottom: 1rem;
 }
 
-.work-item__info > * {
+.work-item__info>* {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -422,14 +420,19 @@ a.mail {
 .work-item .link--button:first-child {
   margin-left: 0;
 }
+
+.ani-works .section-01,
 .ui-works .section-01 {
   padding-bottom: 6rem;
 }
+
+.ani-works .section-01 .title,
 .ui-works .section-01 .title {
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
 }
+
 .ui-works .section-01 .skill1--bg {
   background-image: url(../img/ui-title-bg.svg);
   background-size: contain;
@@ -437,14 +440,19 @@ a.mail {
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
+
+.ani-works h1,
 .ui-works h1 {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 3em;
 }
+
+.ani-works .text,
 .ui-works .text {
   margin-top: 4rem;
 }
+
 .tools {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
@@ -454,8 +462,8 @@ a.mail {
   margin-bottom: 0;
 }
 
-.ani-works .section-02 .skill2--bg {
-  background-image: url(../img/3s-title-bg.svg);
+.ani-works .section-01 .td--bg {
+  background-image: url(../img/3d-title-bg.svg);
   background-size: contain;
   padding-bottom: 7rem;
   background-repeat: no-repeat;
@@ -468,4 +476,27 @@ a.mail {
 
 .ani-works .rendered {
   padding-bottom: 30px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ani-works .embed-video {
+  width: 100%;
+  height: 100%;
 }
