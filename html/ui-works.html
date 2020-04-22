@@ -1,467 +1,469 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-        <title>符嘉文 Foo Jia Wen 作品集 - 關於嘉文</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+    <title>符嘉文 Foo Jia Wen 作品集 - 關於嘉文</title>
 
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css" />
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
-        <script src="../bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="../bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
         </script>
 
-        <!--GSAP-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-        <!--ScrollMagic-->
-        <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
-        <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-        <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-        <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="../ScrollMagic-2.0.6/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
 
-        <!--Font awesome-->
-        <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Font awesome-->
+    <script src="https://use.fontawesome.com/bcfeb58a21.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-        <!--Google font-->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
-            rel="stylesheet" />
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Noto+Serif+TC:900&display=swap"
+        rel="stylesheet" />
 
-        <!--Custom Style Sheet-->
-        <link rel="stylesheet" href="../css/style.css" />
-    </head>
+    <!--Custom Style Sheet-->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
 
-    <body class="ui-works">
-        <div class="header fixed-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="ui-works">
+    <div class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">符嘉文 Foo Jia Wen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">關於我</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                作品
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ui-works.html">UI設計</a>
+                                <a class="dropdown-item" href="game-works.html">游戲開發</a>
+                                <a class="dropdown-item" href="animation-works.html">動畫制作</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link" href="html/en/about.html"><i class="fas fa-globe-asia"></i>English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $(".header").addClass("header--shadow");
+                } else {
+                    $(".header").removeClass("header--shadow");
+                }
+            });
+        </script>
+    </div>
+    <!--./header-->
+
+    <div class="section-01 header-padding title">
+        <div class="container">
+            <div class=" title d-flex flex-wrap">
+                <div class="skill1--bg">
+                    <h1 class="">UIUX 前端設計</h1>
+                </div>
+                <div class="text">
+                    <p class="tools serif">界面設計：Adobe Illustrator / Axure RP / Sketch / Adobe XD / Figma </p>
+                    <p class="tools serif">網頁製作：HTML / CSS / Javascript / Bootstrap / Jquery / GSAP </p>
+                    <p class="my-3 desc">
+                        具有從使用者研究、流程設計、網站架構、界面設計、網頁製作的實務經驗。
+                        <br>曾實習前端設計，2個月内交付4個網站的界面設計和網頁（一些已上線）。
+                        <br>擅長手切RWD，喜歡使用bootstrap等工具提高效率並做出好看的效果。
+                        <br>未來希望學習更多網頁開發技能，往前端更進一步！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="works">
+        <ul class="work-list">
+            <li class="work-item work-item--bg-01">
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">符嘉文 Foo Jia Wen</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="row">
+                        <div class="col-md-5 order-md-2 d-flex work-item__text">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">杯客</h3>
+                                <div class="work-item__type">團隊作品</div>
+                                <div class="work-item__date ml-auto">2020 JAN</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">與團隊一起進行杯客系統的企劃和發想</li>
+                                    <li class="tool-item">使用 Adobe XD 進行界面設計</li>
+                                    <li class="tool-item">使用 HTML / CSS / Bootstrap 製作雛形</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc">
+                                <p>環保杯 x 電子辨碼字 x 售後服務：
+                                    杯客是一款專爲環保杯打造的系統，主要是增强顧客和飲料杯之間的連結，每個環保杯有獨特的識碼。
+                                    顧客可以通過杯客軟件上查詢過去的消費記錄、得知新的消息、集點優惠。</p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.behance.net/gallery/88555353/Cupstomer" class="link--button"
+                                    target="_blank">設計理念
+                                    →</a>
+                                <a href="https://www.github.com/fjwntut/cupstomer" class="link--button"
+                                    target="_blank">設計雛形
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="mr-auto"></div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="about.html">關於我</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    作品
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="ui-works.html">UI設計</a>
-                                    <a class="dropdown-item" href="game-works.html">游戲開發</a>
-                                    <a class="dropdown-item" href="animation-works.html">動畫制作</a>
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-home.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-records.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-record.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-map.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-news.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-article.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-account.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-cups.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-shop.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-cupstomer-reward.jpg" alt="">
+                                    </div>
+
                                 </div>
-                            </li>
-                            <li class="nav-item d-none">
-                                <a class="nav-link" href="html/en/about.html"><i
-                                        class="fas fa-globe-asia"></i>English</a>
-                            </li>
-                        </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <script>
-                $(window).scroll(function () {
-                    var height = $(window).scrollTop();
-                    if (height > 100) {
-                        $(".header").addClass("header--shadow");
-                    } else {
-                        $(".header").removeClass("header--shadow");
-                    }
-                });
-            </script>
-        </div>
-        <!--./header-->
+            </li>
 
-        <div class="section-01 header-padding title">
-            <div class="container">
-                <div class=" title d-flex flex-wrap">
-                    <div class="skill1--bg">
-                        <h1 class="">UIUX 前端設計</h1>
-                    </div>
-                    <div class="text">
-                        <p class="tools serif">界面設計：Adobe Illustrator / Axure RP / Sketch / Adobe XD / Figma </p>
-                        <p class="tools serif">前端切版：HTML / CSS / Javascript / Bootstrap / Jquery / GSAP </p>
-                        <p class="my-3 desc">
-                            具有從使用者研究、流程設計、網站架構、界面設計、切版的實務經驗。
-                            <br>曾實習前端設計，2個月内交付4個網站的界面設計和切版（一些已上線）。
-                            <br>擅長手切RWD，喜歡使用bootstrap提高切版效率。
-                            <br>未來希望學習更多網頁開發技能，往前端更進一步！
-                        </p>
+            <li class="work-item work-item--bg-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5  order-md-2 d-flex work-item__text">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">肯驛商務官網</h3>
+                                <div class="work-item__type">實習作品</div>
+                                <div class="work-item__date ml-auto">2019 AUG</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">根據業務提供的内容使用 Sketch進行版面設計</li>
+                                    <li class="tool-item">用 HTML / CSS / Bootstrap / Jquery / GSAP 製作網頁</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc d-none">
+                                <p></p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.canlead-lifestyle.com.tw/index.html" class="link--button"
+                                    target="_blank">線上看
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--web">
+                                        <img src="../img/ui-canlead.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="works">
-            <ul class="work-list">
-                <li class="work-item work-item--bg-01">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 order-md-2 d-flex work-item__text">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">杯客</h3>
-                                    <div class="work-item__type">團隊作品</div>
-                                    <div class="work-item__date ml-auto">2020 JAN</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">發想</li>
-                                        <li class="tool-item">界面設計 Adobe XD</li>
-                                        <li class="tool-item">雛形製作 HTML / CSS / Bootstrap</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc">
-                                    <p>環保杯 x 電子辨碼字 x 售後服務：
-                                        杯客是一款專爲環保杯打造的系統，主要是增强顧客和飲料杯之間的連結，每個環保杯有獨特的識碼。
-                                        顧客可以通過杯客軟件上查詢過去的消費記錄、得知新的消息、集點優惠。</p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.behance.net/gallery/88555353/Cupstomer"
-                                        class="link--button">設計理念
-                                        →</a>
-                                    <a href="https://www.github.com/fjwntut/cupstomer" class="link--button">設計雛形
-                                        →</a>
-                                </div>
+            </li>
+            <li class="work-item work-item--bg-03">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 order-md-2  d-flex work-item__text">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">星展信用卡兌禮平臺</h3>
+                                <div class="work-item__type">實習作品</div>
+                                <div class="work-item__date ml-auto">2019 JUL</div>
                             </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-home.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-records.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-record.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-map.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-news.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-article.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-account.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-cups.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-shop.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-cupstomer-reward.jpg" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">改良舊有的網頁</li>
+                                    <li class="tool-item">使用 Sketch 進行界面設計</li>
+                                    <li class="tool-item">使用 HTML / CSS / Bootstrap / Jquery 製作網頁</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc d-none">
+                                <p></p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.freeliving.com.tw/event/dbs/signature-titanium/"
+                                    class="link--button" target="_blank"><i class="fas fa-globe-asia"></i> 線上看
+                                    →</a>
                             </div>
                         </div>
-                    </div>
-                </li>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+                                <div class="scrollable row flex-nowrap">
 
-                <li class="work-item work-item--bg-02">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5  order-md-2 d-flex work-item__text">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">肯驛商務官網</h3>
-                                    <div class="work-item__type">實習作品</div>
-                                    <div class="work-item__date ml-auto">2019 AUG</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">版面設計 Sketch</li>
-                                        <li class="tool-item">切版 HTML / CSS / Bootstrap / Jquery / GSAP</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc d-none">
-                                    <p></p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.canlead-lifestyle.com.tw/index.html" class="link--button">線上看
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--web">
-                                            <img src="../img/ui-canlead.jpg" alt="">
-                                        </div>
+                                    <div class="mockup--web">
+                                        <img src="../img/ui-dbs.jpg" alt="">
                                     </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="work-item work-item--bg-03">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 order-md-2  d-flex work-item__text">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">星展信用卡兌禮平臺</h3>
-                                    <div class="work-item__type">實習作品</div>
-                                    <div class="work-item__date ml-auto">2019 JUL</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">界面設計 Sketch</li>
-                                        <li class="tool-item">切版 HTML / CSS / Bootstrap / Jquery</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc d-none">
-                                    <p></p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.freeliving.com.tw/event/dbs/signature-titanium/"
-                                        class="link--button"><i class="fas fa-globe-asia"></i> 線上看
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-                                    <div class="scrollable row flex-nowrap">
-
-                                        <div class="mockup--web">
-                                            <img src="../img/ui-dbs.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img src="../img/ui-dbs-mobile.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="work-item work-item--bg-04">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5  order-md-2  d-flex work-item__text">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">新鮮日曆</h3>
-                                    <div class="work-item__type">團隊作品</div>
-                                    <div class="work-item__date ml-auto">2019 JUN</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">發想</li>
-                                        <li class="tool-item">雛形製作 Android Studio</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc">
-                                    <p>新鮮日曆將有效期限管理與遊戲化結合，
-                                        以養成日記的方式讓使用者掌握化妝品、食品的有效期限，
-                                        吃得安心同時也能夠節約資源。
-                                    </p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.behance.net/gallery/86632069/FreshDiary-Expiry-date-management-App"
-                                        class="link--button">設計理念
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--phone">
-                                            <img src="../img/ui-fd-start.jpg" alt="">
-                                        </div>
-                                        <div class="mockup--phone">
-                                            <img src="../img/ui-fd.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="work-item work-item--bg-05">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5  order-md-2 d-flex work-item__text">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">Ratino 官網</h3>
-                                    <div class="work-item__type">團隊作品</div>
-                                    <div class="work-item__date ml-auto">2019 JUN</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">切版 HTML / CSS / Bootstrap</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc d-none">
-                                    <p></p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.ratino.com.tw/" class="link--button">線上看
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--web">
-                                            <img src="../img/ui-ratino.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="work-item work-item--bg-06">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 order-md-2  work-item__text d-flex">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">北科大圖書館系統設計</h3>
-                                    <div class="work-item__type">團隊作品</div>
-                                    <div class="work-item__date ml-auto">2019 JAN</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">使用性測試</li>
-                                        <li class="tool-item">界面設計 Axure RP</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc">
-                                    <p>對原本學校圖書館系統進行使用性測試，包括任務測試與SUS評量，
-                                        並根據測試結果分析網站問題並加以改善，
-                                        例如對網站的導航、版面設計進行調整。</p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.behance.net/gallery/78573405/Redesign-of-Taipei-Tech-University-Library-Website"
-                                        class="link--button">設計理念
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
-
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--web">
-                                            <img class="" src="../img/ui-lib-01.png" alt=""></div>
-                                        <div class="mockup--web">
-                                            <img class="" src="../img/ui-lib-02.png" alt=""></div>
-                                        <div class="mockup--web">
-                                            <img class="" src="../img/ui-lib-03.jpg" alt=""></div>
-
+                                    <div class="mockup--phone">
+                                        <img src="../img/ui-dbs-mobile.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="work-item work-item--bg-02">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5  work-item__text order-md-2 d-flex">
-                                <div class="d-flex work-item__info">
-                                    <h3 class="work-item__title">Masalu!牡丹</h3>
-                                    <div class="work-item__type">團隊作品</div>
-                                    <div class="work-item__date ml-auto">2017 APR</div>
-                                </div>
-                                <div class="work-item__tool d-flex">
-                                    <div class="">負責：</div>
-                                    <ul class="tool-list">
-                                        <li class="tool-item">界面設計 Photoshop</li>
-                                        <li class="tool-item">内嵌文章切版 HTML / CSS</li>
-                                    </ul>
-                                </div>
-                                <div class="work-item__desc">
-                                    <p>屏東縣牡丹鄉旅游導覽App：
-                                        Masalu!牡丹是與同學跨係合作推出的原鄉導覽App。
-                                        經過實地考察，我們決定以排灣族的歡迎用語Masalu作爲命名。
-                                        用戶可以通過App瞭解到當地衣食住行的資訊，以及旅游景點</p>
-                                </div>
-                                <div class="d-flex action-buttons">
-                                    <a href="https://www.behance.net/gallery/78584677/Masalu-Travel-App"
-                                        class="link--button">設計理念
-                                        →</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 work-item__media">
-                                <div class="scrollable-parent">
 
-                                    <div class="scrollable row flex-nowrap">
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-masalu-start.jpg" alt=""></div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-masalu-home.jpg" alt=""></div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-masalu-info.jpg" alt=""></div>
-                                        <div class="mockup--phone">
-                                            <img class="" src="../img/ui-masalu-article.jpg" alt=""></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        </div>
-        <footer id="footerbox">
-            <div class="container">
-                <div class="contact">
-                    <div class="d-flex flex-wrap mx-auto ml-md-0">
-                        <a href="" class="phone"><img src="../img/footer-phone-icon.png" class="contact__icon"
-                                alt="" />+886909624612</a>
-                        <a href="mailto://foojiawen@outlook.com" class="mail"><img src="../img/footer-mail-icon.png"
-                                class="contact__icon" alt="" />foojiawen@outlook.com</a>
-                    </div>
-                    <div class="d-flex mx-auto mr-md-0">
-                        <a href="https://www.facebook.com/F00JiaWen" class="fb"><img src="../img/footer-fb-icon.png"
-                                class="contact__icon" alt=""></a>
-                        <a href="https://www.behance.net/foojiawen" class="behance"><img
-                                src="../img/footer-behance-icon.png" class=" contact__icon" alt=""></a>
-                        <a href="https://github.com/fjwntut" class="github"><img src="../img/footer-github-icon.png"
-                                class=" contact__icon" alt=""></a>
                     </div>
                 </div>
-                <div class="copyright text--grey">
-                    <p>Copyright © 2020 by Foo Jia Wen</p>
+            </li>
+            <li class="work-item work-item--bg-04">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5  order-md-2  d-flex work-item__text">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">新鮮日曆</h3>
+                                <div class="work-item__type">團隊作品</div>
+                                <div class="work-item__date ml-auto">2019 JUN</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">針對過期食品的問題，設計APP功能</li>
+                                    <li class="tool-item">使用 Android Studio 製作雛形</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc">
+                                <p>新鮮日曆將有效期限管理與遊戲化結合，
+                                    以養成日記的方式讓使用者掌握化妝品、食品的有效期限，
+                                    吃得安心同時也能夠節約資源。
+                                </p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.behance.net/gallery/86632069/FreshDiary-Expiry-date-management-App"
+                                    class="link--button" target="_blank">設計理念
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--phone">
+                                        <img src="../img/ui-fd-start.jpg" alt="">
+                                    </div>
+                                    <div class="mockup--phone">
+                                        <img src="../img/ui-fd.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="work-item work-item--bg-05">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5  order-md-2 d-flex work-item__text">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">Ratino 官網</h3>
+                                <div class="work-item__type">團隊作品</div>
+                                <div class="work-item__date ml-auto">2019 JUN</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">根據設計圖，製作 HTML / CSS / Bootstrap 網頁</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc d-none">
+                                <p></p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.ratino.com.tw/" class="link--button" target="_blank">線上看
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--web">
+                                        <img src="../img/ui-ratino.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="work-item work-item--bg-06">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 order-md-2  work-item__text d-flex">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">北科大圖書館系統設計</h3>
+                                <div class="work-item__type">團隊作品</div>
+                                <div class="work-item__date ml-auto">2019 JAN</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">與團隊一同進行使用性測試、分析問題</li>
+                                    <li class="tool-item">使用 Axure RP 重新設計系統界面</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc">
+                                <p>對原本學校圖書館系統進行使用性測試，包括任務測試與SUS評量，
+                                    並根據測試結果分析網站問題並加以改善，
+                                    例如對網站的導航、版面設計進行調整。</p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.behance.net/gallery/78573405/Redesign-of-Taipei-Tech-University-Library-Website"
+                                    class="link--button" target="_blank">設計理念
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--web">
+                                        <img class="" src="../img/ui-lib-01.png" alt=""></div>
+                                    <div class="mockup--web">
+                                        <img class="" src="../img/ui-lib-02.png" alt=""></div>
+                                    <div class="mockup--web">
+                                        <img class="" src="../img/ui-lib-03.jpg" alt=""></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="work-item work-item--bg-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5  work-item__text order-md-2 d-flex">
+                            <div class="d-flex work-item__info">
+                                <h3 class="work-item__title">Masalu!牡丹</h3>
+                                <div class="work-item__type">團隊作品</div>
+                                <div class="work-item__date ml-auto">2017 APR</div>
+                            </div>
+                            <div class="work-item__tool d-flex">
+                                <div class="list-title">負責：</div>
+                                <ul class="tool-list">
+                                    <li class="tool-item">使用 Photoshop 進行界面設計</li>
+                                    <li class="tool-item">内嵌文章 CSS 樣式製作</li>
+                                </ul>
+                            </div>
+                            <div class="work-item__desc">
+                                <p>屏東縣牡丹鄉旅游導覽App：
+                                    Masalu!牡丹是與同學跨係合作推出的原鄉導覽App。
+                                    經過實地考察，我們決定以排灣族的歡迎用語Masalu作爲命名。
+                                    用戶可以通過App瞭解到當地衣食住行的資訊，以及旅游景點</p>
+                            </div>
+                            <div class="d-flex action-buttons">
+                                <a href="https://www.behance.net/gallery/78584677/Masalu-Travel-App"
+                                    class="link--button" target="_blank">設計理念
+                                    →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 work-item__media">
+                            <div class="scrollable-parent">
+
+                                <div class="scrollable row flex-nowrap">
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-masalu-start.jpg" alt=""></div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-masalu-home.jpg" alt=""></div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-masalu-info.jpg" alt=""></div>
+                                    <div class="mockup--phone">
+                                        <img class="" src="../img/ui-masalu-article.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+    <footer id="footerbox">
+        <div class="container">
+            <div class="contact">
+                <div class="d-flex flex-wrap mx-auto ml-md-0">
+                    <a href="" class="phone"><img src="../img/footer-phone-icon.png" class="contact__icon"
+                            alt="" />+886909624612</a>
+                    <a href="mailto://foojiawen@outlook.com" class="mail"><img src="../img/footer-mail-icon.png"
+                            class="contact__icon" alt="" />foojiawen@outlook.com</a>
+                </div>
+                <div class="d-flex mx-auto mr-md-0">
+                    <a href="https://www.facebook.com/F00JiaWen" class="fb"><img src="../img/footer-fb-icon.png"
+                            class="contact__icon" alt=""></a>
+                    <a href="https://www.behance.net/foojiawen" class="behance"><img
+                            src="../img/footer-behance-icon.png" class=" contact__icon" alt=""></a>
+                    <a href="https://github.com/fjwntut" class="github"><img src="../img/footer-github-icon.png"
+                            class=" contact__icon" alt=""></a>
                 </div>
             </div>
-        </footer>
-        <!---/.footer--->
-    </body>
+            <div class="copyright text--grey">
+                <p>Copyright © 2020 by Foo Jia Wen</p>
+            </div>
+        </div>
+    </footer>
+    <!---/.footer--->
+</body>
 
 </html>

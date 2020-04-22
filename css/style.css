@@ -7,7 +7,7 @@
 }
 
 h1,
-h1>* {
+h1 > * {
   font-size: 64px;
   color: black;
   font-family: "Noto Serif TC", serif;
@@ -19,7 +19,7 @@ h1>* {
 }
 
 h2,
-h2>* {
+h2 > * {
   font-size: 32px;
   line-height: 46px;
   color: black;
@@ -33,7 +33,7 @@ h2>* {
 }
 
 .serif,
-.serif>* {
+.serif > * {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -226,7 +226,8 @@ a.mail {
 }
 
 @media (min-width: 768px) {
-  .index .skill {}
+  .index .skill {
+  }
 }
 
 /* about */
@@ -387,7 +388,7 @@ a.mail {
   margin-bottom: 1rem;
 }
 
-.work-item__info>* {
+.work-item__info > * {
   font-family: "Noto Serif TC", serif;
   font-weight: 900;
 }
@@ -461,15 +462,23 @@ a.mail {
 .section-01 p {
   margin-bottom: 0;
 }
-
-.ani-works .section-01 .td--bg {
+.ui-works .list-title {
+  min-width: 50px;
+}
+.ani-works .section-01 .ani1--bg {
   background-image: url(../img/3d-title-bg.svg);
   background-size: contain;
   padding-bottom: 7rem;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
-
+.ani-works .section-01 .ani2--bg {
+  background-image: url(../img/2d-title-bg.svg);
+  background-size: contain;
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
 .ani-works .rendered img {
   width: 100%;
 }
@@ -499,4 +508,9 @@ a.mail {
 .ani-works .embed-video {
   width: 100%;
   height: 100%;
+}
+
+.ani-works .d-md-flex .rendered {
+  margin-left: 15px;
+  margin-right: 15px;
 }
