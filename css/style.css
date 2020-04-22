@@ -337,7 +337,8 @@ a.mail {
   padding: 0px;
 }
 
-.work-item .col-md-5 {
+.work-item .col-md-5,
+.work-item .col-md-4 {
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -451,4 +452,20 @@ a.mail {
 
 .section-01 p {
   margin-bottom: 0;
+}
+
+.ani-works .section-02 .skill2--bg {
+  background-image: url(../img/3s-title-bg.svg);
+  background-size: contain;
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.ani-works .rendered img {
+  width: 100%;
+}
+
+.ani-works .rendered {
+  padding-bottom: 30px;
 }
